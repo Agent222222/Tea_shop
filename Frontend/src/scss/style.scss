@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    span{
+        color: red;
+    }
+}
+
+main{
+    .svat{
+        width: 400px;
+        height: auto;
+    }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
