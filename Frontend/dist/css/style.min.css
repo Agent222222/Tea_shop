@@ -645,16 +645,17 @@ body .section6 .section6-caption .sp {
   justify-content: start;
 }
 body .section6 .section6-part2 {
-  height: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 body .section6 .section6-part2-question {
   width: 670px;
-  height: 90px;
+  height: 100px;
   justify-content: space-between;
   border-top: 1px solid #4f9e00;
+  transition: 0.5s;
 }
 body .section6 .section6-part2-question .section6-part2-question-p1 {
   font-family: Poppins;
@@ -665,6 +666,10 @@ body .section6 .section6-part2-question .section6-part2-question-p1 {
   max-width: 638px;
 }
 body .section6 .section6-part2-question .section6-part2-question-p1 .hidden {
+  height: 0;
+  color: #8A8A8A;
+  overflow: hidden;
+  transition: height 0.5s;
   font-size: 18px;
   letter-spacing: 0.5px;
   word-spacing: 1.2px;

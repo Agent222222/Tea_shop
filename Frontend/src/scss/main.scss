@@ -528,16 +528,17 @@ main{
         }
     }
     .section6-part2{
-        height: 200px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
     .section6-part2-question{
         width: 670px;
-        height: 90px;
+        height: 100px;
         justify-content: space-between;
         border-top: 1px solid $color_1;
+        transition: 0.5s;
         .section6-part2-question-p1{
             font-family: Poppins;
             font-size: 22px;
@@ -546,6 +547,10 @@ main{
             padding-left: 2px;
             max-width: 638px;
             .hidden{
+                height: 0;
+                color: $color_2;
+                overflow: hidden;
+                transition: height 0.5s;
                 font-size: 18px;
                 letter-spacing: 0.5px;
                 word-spacing: 1.2px;
