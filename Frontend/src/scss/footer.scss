@@ -85,3 +85,13 @@ footer{
         }
     }
 }
+
+@media screen and (max-width: 1025px){
+    footer{
+        height: 300px;
+        padding: 0 6% 0 6%;
+        .footer_section{
+            margin: 60px 0 0 0 ;
+        }
+    }
+}

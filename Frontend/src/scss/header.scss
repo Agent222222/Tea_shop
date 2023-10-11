@@ -23,8 +23,12 @@ header{
             padding-left: 3%;
             padding-right: 3%;
             transition: 0.5s;
-            @extend %font1;
+            list-style-type: none;
+            font-family: Poppins;
             font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            color: $color_2;
         }
         .element-of-headeer-list:hover{
             color: $color_1;
@@ -48,15 +52,6 @@ header{
             box-shadow: 0px 2px 10px rgba(14, 168, 0, 0.372);
             transition: 0.5s;
         }
-
-        .img_hedbtn1{
-            padding: 5px 5px 7px 5px;
-            background-position: center;
-            background-size: 31px;
-            background-repeat: no-repeat;
-            background-color: $color_5;
-            background-image: url(../img/image_2023-10-02_14-49-00.png);
-        }
         .img_hedbtn2{
             background-position: center;
             background-size: 34px;
@@ -64,5 +59,32 @@ header{
             background-color: $color_5;
             background-image: url(../img/image_2023-10-02_14-49-21.png);
         }
+    }
+}
+
+@media screen and (max-width: 1025px){
+    header{
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .logo-container{
+        img{
+            height: 35px;
+        }
+    }
+    .list-in-header{
+        font-size: 14px;
+        .element-of-headeer-list{
+            padding-left: 1%;
+            padding-right: 1%;
+            font-size: 14px;
+        }
+    }
+    .head_btn{
+        width: 49px;
+        height: 49px;
+    }
+    .img_hedbtn2{
+        background-size: 30px;
     }
 }
