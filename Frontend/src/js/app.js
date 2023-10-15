@@ -1,3 +1,10 @@
+import * as home from "../js/home.js"
+import * as shop from "../js/shop.js"
+import * as contact from "../js/contact.js"
+
+home();
+shop();
+contact();
 const questions = document.querySelectorAll('.section6-part2-question');
 
 function resetAllElements() {

@@ -28,9 +28,14 @@ header{
             font-size: 20px;
             font-style: normal;
             font-weight: 600;
-            color: $color_2;
+            
+            .navigation{
+                text-decoration:none;
+                cursor: pointer;
+                color: $color_2;
+            }
         }
-        .element-of-headeer-list:hover{
+        .navigation:hover{
             color: $color_1;
             text-shadow: 1px 5px 6px #dadada;
             transition: 0.5s;
