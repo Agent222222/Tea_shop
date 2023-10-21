@@ -84,7 +84,7 @@ body main, body header {
   padding: 50px 100px 50px 100px;
 }
 
-body .section7 .section7-consultation-description, body .section5, body .section4-part2-block, body .section-3 .section3-part2-block-caption, body .main-title-caption {
+body .section7 .section7-consultation-description, body .section7 .main-title-caption, body .main_desk .section5, body .main_desk .section4-part2-block, body .main_desk .section-3 .section3-part2-block-caption, body .main_desk .main-title-caption {
   list-style-type: none;
   font-family: Poppins;
   font-size: 20px;
@@ -93,7 +93,7 @@ body .section7 .section7-consultation-description, body .section5, body .section
   color: #8A8A8A;
 }
 
-body .main-title-btn2, body .main-title-btn {
+body .section7 .main-title-btn, body .main_desk .main-title-btn2, body .main_desk .main-title-btn {
   width: 224px;
   height: 55px;
   color: #FFFFFF;
@@ -203,16 +203,16 @@ body header .head_btn_ctn .img_hedbtn2 {
 body main {
   margin: 0px auto;
 }
-body .main-title-btn {
+body .main_desk .main-title-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-body .main-title-btn p {
+body .main_desk .main-title-btn p {
   padding-left: 10px;
 }
-body .main-title-btn2 {
+body .main_desk .main-title-btn2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,28 +221,28 @@ body .main-title-btn2 {
   background-color: #ffffff;
   border: 1.5px solid #8A8A8A;
 }
-body .main-title-btn2 p {
+body .main_desk .main-title-btn2 p {
   padding-left: 10px;
 }
-body .main-title-btn2 .special-arrow::before {
+body .main_desk .main-title-btn2 .special-arrow::before {
   border-color: #8A8A8A;
 }
-body .main-title-btn2 .special-arrow::after {
+body .main_desk .main-title-btn2 .special-arrow::after {
   border-color: #8A8A8A;
 }
-body .main-title {
+body .main_desk .main-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2px 0 67px 0;
 }
-body .special-arrow {
+body .main_desk .special-arrow {
   width: 60px;
   height: 20px;
   display: inline-block;
   position: relative;
 }
-body .special-arrow::before {
+body .main_desk .special-arrow::before {
   content: "";
   display: block;
   width: 10px;
@@ -255,7 +255,7 @@ body .special-arrow::before {
   position: relative;
   transform-origin: 50% 50%;
 }
-body .special-arrow::after {
+body .main_desk .special-arrow::after {
   content: "";
   display: block;
   top: 4%;
@@ -265,17 +265,17 @@ body .special-arrow::after {
   position: relative;
   transform-origin: 50% 50%;
 }
-body .right3::before {
+body .main_desk .right3::before {
   transform: rotate(45deg);
   margin: -4px 0 0 -52px;
 }
-body .right3::after {
+body .main_desk .right3::after {
   width: 38px;
   height: 0;
   border-width: 2px 0 0 0;
   transform: translate(-84px, 1px);
 }
-body .main-title-caption {
+body .main_desk .main-title-caption {
   font-size: 53px;
   letter-spacing: 3px;
   font-weight: 900;
@@ -284,7 +284,7 @@ body .main-title-caption {
   font-weight: bolder;
   text-align: center;
 }
-body .main-title-text {
+body .main_desk .main-title-text {
   width: 660px;
   text-align: center;
   font-size: 22px;
@@ -295,11 +295,11 @@ body .main-title-text {
   font-weight: 200;
   margin-bottom: 9px;
 }
-body .main-title-btn_sec {
+body .main_desk .main-title-btn_sec {
   display: flex;
   flex-direction: row;
 }
-body .vid_sec {
+body .main_desk .vid_sec {
   position: absolute;
   left: 0%;
   height: 548px;
@@ -308,20 +308,20 @@ body .vid_sec {
   border-top-right-radius: 275px 275px;
   border-bottom-right-radius: 275px 275px;
 }
-body .vid_sec .video-container {
+body .main_desk .vid_sec .video-container {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
-body .main-title2 {
+body .main_desk .main-title2 {
   display: flex;
   flex-direction: row;
   margin: 742px 0 0 0;
   padding-left: 35px;
   justify-content: space-between;
 }
-body .main-title2 .main-title-caption {
+body .main_desk .main-title2 .main-title-caption {
   margin: 0 0 6px 0;
   font-size: 46px;
   line-height: 66px;
@@ -329,30 +329,30 @@ body .main-title2 .main-title-caption {
   text-align: justify;
   font-weight: bolder;
 }
-body .main-title2 .main-title-text {
+body .main_desk .main-title2 .main-title-text {
   width: 600px;
   text-align: start;
   line-height: 32px;
   margin: 0 0 10px 0;
 }
-body .main-title2 .main-title-btn {
+body .main_desk .main-title2 .main-title-btn {
   margin: 20px 15px 20px 0px;
 }
-body .main-title2_sec {
+body .main_desk .main-title2_sec {
   width: 625px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   justify-content: center;
 }
-body .main-title2_sec2-img {
+body .main_desk .main-title2_sec2-img {
   width: 750px;
 }
-body .section-3 .main-title-caption {
+body .main_desk .section-3 .main-title-caption {
   font-size: 46px;
   margin-top: 100px;
 }
-body .section-3 .section-3 {
+body .main_desk .section-3 .section-3 {
   margin-top: 80px;
   margin-bottom: 100px;
   display: flex;
@@ -360,7 +360,7 @@ body .section-3 .section-3 {
   justify-content: center;
   text-align: center;
 }
-body .section-3 .section3-part1 {
+body .main_desk .section-3 .section3-part1 {
   font-family: "Montserrat", sans-serif;
   font-style: bold;
   font-weight: 500;
@@ -368,14 +368,14 @@ body .section-3 .section3-part1 {
   line-height: 44px;
   margin-bottom: 50px;
 }
-body .section-3 .section3-part2 {
+body .main_desk .section-3 .section3-part2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 42px 0 38px 0;
 }
-body .section-3 .section3-part2-block {
+body .main_desk .section-3 .section3-part2-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -386,7 +386,7 @@ body .section-3 .section3-part2-block {
   border-radius: 270px 270px 10px 10px;
   margin: 0% 2% 0% 2%;
 }
-body .section-3 .U-img {
+body .main_desk .section-3 .U-img {
   margin: 35px 0px 23px 0px;
   display: flex;
   align-items: center;
@@ -405,13 +405,13 @@ body .section-3 .U-img {
   background-clip: text;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
-body .section-3 .section3-part2-block-caption {
+body .main_desk .section-3 .section3-part2-block-caption {
   color: black;
   font-size: 26px;
   font-weight: 900;
   margin: 0 0 15px 0;
 }
-body .section-3 .section3-part2-text {
+body .main_desk .section-3 .section3-part2-text {
   width: 244px;
   height: 90px;
   font-family: Poppins;
@@ -422,13 +422,13 @@ body .section-3 .section3-part2-text {
   color: #494949;
   margin: 0 0 40px 0;
 }
-body .section-3 .section3-part2-button {
+body .main_desk .section-3 .section3-part2-button {
   margin: auto;
 }
-body .section-3 .main-title-btn {
+body .main_desk .section-3 .main-title-btn {
   margin: 0px auto;
 }
-body .section4-part2-block {
+body .main_desk .section4-part2-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -441,36 +441,36 @@ body .section4-part2-block {
   margin: 0% 2% 0% 2%;
   padding: 0 60px 0 60px;
 }
-body .section4-part2-block .section4-part2-block-portion {
+body .main_desk .section4-part2-block .section4-part2-block-portion {
   margin: 0;
   font-size: 16px;
   font-weight: 900;
 }
-body .section4-part2-block .section4-part2-caption {
+body .main_desk .section4-part2-block .section4-part2-caption {
   margin: 0;
   font-size: 21px;
   font-weight: 900;
 }
-body .section4-part2-block .section4-part2-price {
+body .main_desk .section4-part2-block .section4-part2-price {
   margin: 0;
   font-size: 28px;
   font-weight: 900;
 }
-body .section-4 {
+body .main_desk .section-4 {
   margin-top: 116px;
 }
-body .section-4 .main-title-caption {
+body .main_desk .section-4 .main-title-caption {
   font-size: 48px;
   letter-spacing: 0px;
 }
-body .section-4 .section4-part2 {
+body .main_desk .section-4 .section4-part2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 42px 0 52px 0;
 }
-body .section-4 .Tea-img {
+body .main_desk .section-4 .Tea-img {
   margin: 15px 0px 23px 0px;
   display: flex;
   align-items: center;
@@ -482,28 +482,28 @@ body .section-4 .Tea-img {
   height: 180px;
   border-radius: 800px;
 }
-body .section-4 .img1 {
+body .main_desk .section-4 .img1 {
   background-image: url(../img/image9.jpg);
 }
-body .section-4 .img2 {
+body .main_desk .section-4 .img2 {
   background-image: url(../img/image10.jpg);
 }
-body .section-4 .img3 {
+body .main_desk .section-4 .img3 {
   background-image: url(../img/image11.jpg);
 }
-body .section-4 .section3-part2-button {
+body .main_desk .section-4 .section3-part2-button {
   margin: auto;
 }
-body .section-4 .main-title-btn {
+body .main_desk .section-4 .main-title-btn {
   margin: 0px auto;
 }
-body .section5 {
+body .main_desk .section5 {
   margin-top: 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body .section5 .section5-part2 {
+body .main_desk .section5 .section5-part2 {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -511,23 +511,23 @@ body .section5 .section5-part2 {
   align-items: center;
   margin-bottom: 15px;
 }
-body .section5 .section4-part2-block {
+body .main_desk .section5 .section4-part2-block {
   align-items: center;
   padding: 0px;
   width: 350px;
 }
-body .section5 .section3-part2-block-caption {
+body .main_desk .section5 .section3-part2-block-caption {
   color: #000000;
   font-size: 26px;
   margin: 22px 0 0 0;
 }
-body .section5 .main-title-caption {
+body .main_desk .section5 .main-title-caption {
   font-size: 44px;
   padding-top: 10px;
   padding-bottom: 4px;
   letter-spacing: 2.3px;
 }
-body .section5-status {
+body .main_desk .section5-status {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -536,12 +536,12 @@ body .section5-status {
   color: #8A8A8A;
   margin: 9px 0 9px 0;
 }
-body .Photo-img {
+body .main_desk .Photo-img {
   width: 90px;
   height: 90px;
   border-radius: 230px;
 }
-body .section5-part2-text {
+body .main_desk .section5-part2-text {
   width: 300px;
   height: 101px;
   font-size: 18px;
@@ -551,61 +551,61 @@ body .section5-part2-text {
   color: #000000;
   margin: 0 0 20px 0;
 }
-body .section5-part2-part3 {
+body .main_desk .section5-part2-part3 {
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .section5-part2-semipart {
+body .main_desk .section5-part2-semipart {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-body .leftarrow {
+body .main_desk .leftarrow {
   background-color: #8A8A8A;
   width: 79px;
   height: 4px;
   margin-right: 5px;
   transition: 0.7s;
 }
-body .rightarrow {
+body .main_desk .rightarrow {
   background-color: #8A8A8A;
   width: 79px;
   height: 4px;
   margin-left: 5px;
   transition: 0.7s;
 }
-body .section5-part2-right:hover {
+body .main_desk .section5-part2-right:hover {
   width: 250px;
   transition: 0.7s;
 }
-body .section5-part2-right:hover .rightarrow {
+body .main_desk .section5-part2-right:hover .rightarrow {
   width: 139px;
   transition: 0.7s;
   background-color: #4f9e00;
 }
-body .section5-part2-right:hover .rightarrow_img {
+body .main_desk .section5-part2-right:hover .rightarrow_img {
   margin-left: 115px;
   transition: 0.7s;
   fill: #4f9e00;
 }
-body .section5-part2-left:hover {
+body .main_desk .section5-part2-left:hover {
   width: 250px;
   transition: 0.7s;
 }
-body .section5-part2-left:hover .leftarrow {
+body .main_desk .section5-part2-left:hover .leftarrow {
   width: 139px;
   transition: 0.7s;
   background-color: #4f9e00;
 }
-body .section5-part2-left:hover .leftarrow_img {
+body .main_desk .section5-part2-left:hover .leftarrow_img {
   margin-right: 115px;
   transition: 0.7s;
   fill: #4f9e00;
 }
-body .section5-part2-left {
+body .main_desk .section5-part2-left {
   width: 200px;
   height: 40px;
   display: flex;
@@ -613,7 +613,7 @@ body .section5-part2-left {
   justify-content: end;
   transition: 0.7s;
 }
-body .section5-part2-right {
+body .main_desk .section5-part2-right {
   width: 200px;
   height: 40px;
   display: flex;
@@ -621,7 +621,7 @@ body .section5-part2-right {
   justify-content: start;
   transition: 0.7s;
 }
-body .leftarrow_img {
+body .main_desk .leftarrow_img {
   position: absolute;
   transform: rotate(180deg);
   fill: #8A8A8A;
@@ -630,7 +630,7 @@ body .leftarrow_img {
   margin-right: 55px;
   transition: 0.7s;
 }
-body .rightarrow_img {
+body .main_desk .rightarrow_img {
   position: absolute;
   fill: #8A8A8A;
   height: 48px;
@@ -638,35 +638,35 @@ body .rightarrow_img {
   margin-left: 55px;
   transition: 0.7s;
 }
-body .section6 {
+body .main_desk .section6 {
   max-width: 1500px;
   margin-top: 70px 0 0 0;
   height: 400px;
   margin: 0 auto;
 }
-body .section6 .section6-caption {
+body .main_desk .section6 .section6-caption {
   height: 100px;
   margin-bottom: 20px;
   align-items: start;
   margin-left: 30px;
 }
-body .section6 .section6-caption .main-title-caption {
+body .main_desk .section6 .section6-caption .main-title-caption {
   text-align: start;
   font-size: 41px;
   font-weight: 900;
 }
-body .section6 .section6-caption .line {
+body .main_desk .section6 .section6-caption .line {
   background-color: #4f9e00;
   height: 5px;
   width: 120px;
   margin-bottom: 20px;
 }
-body .section6 .section6-caption .sp {
+body .main_desk .section6 .section6-caption .sp {
   height: 24px;
   display: flex;
   justify-content: start;
 }
-body .section6 .section6-part2 {
+body .main_desk .section6 .section6-part2 {
   height: 300px;
   display: flex;
   align-content: space-between;
@@ -674,14 +674,14 @@ body .section6 .section6-part2 {
   flex-wrap: wrap;
   padding: 0 30px 0 30px;
 }
-body .section6 .section6-part2-question {
+body .main_desk .section6 .section6-part2-question {
   width: 670px;
   height: 100px;
   justify-content: space-between;
   border-top: 1px solid #4f9e00;
   transition: 0.5s;
 }
-body .section6 .section6-part2-question .section6-part2-question-p1 {
+body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 {
   font-family: Poppins;
   font-size: 22px;
   font-weight: 900;
@@ -689,7 +689,7 @@ body .section6 .section6-part2-question .section6-part2-question-p1 {
   padding-left: 2px;
   max-width: 638px;
 }
-body .section6 .section6-part2-question .section6-part2-question-p1 .hidden {
+body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 .hidden {
   height: 0;
   color: #8A8A8A;
   overflow: hidden;
@@ -698,7 +698,7 @@ body .section6 .section6-part2-question .section6-part2-question-p1 .hidden {
   letter-spacing: 0.5px;
   word-spacing: 1.2px;
 }
-body .section6 .section6-part2-question .section6-part2-question-img {
+body .main_desk .section6 .section6-part2-question .section6-part2-question-img {
   height: 18px;
   width: 18px;
   padding: 6px;
@@ -706,63 +706,63 @@ body .section6 .section6-part2-question .section6-part2-question-img {
   border-radius: 50px;
   transition: 0.5s;
 }
-body .section6 .section6-part2-question {
+body .main_desk .section6 .section6-part2-question {
   display: flex;
   flex-direction: row;
 }
 @media screen and (max-width: 1500px) {
-  body .section6 {
+  body .main_desk .section6 {
     margin: 46px 0 0 0;
     min-width: 800px;
     padding: 0px 0px 0 0px;
     height: 300px;
   }
-  body .section6 .section6-caption {
+  body .main_desk .section6 .section6-caption {
     height: 94px;
     margin-bottom: 0px;
     align-items: start;
   }
-  body .section6 .section6-caption .main-title-caption {
+  body .main_desk .section6 .section6-caption .main-title-caption {
     text-align: start;
     font-size: 28px;
     font-weight: 900;
   }
-  body .section6 .section6-caption .line {
+  body .main_desk .section6 .section6-caption .line {
     background-color: #4f9e00;
     height: 5px;
     width: 120px;
     margin-bottom: 20px;
   }
-  body .section6 .section6-caption .sp {
+  body .main_desk .section6 .section6-caption .sp {
     height: 18px;
     width: 94px;
     display: flex;
     justify-content: start;
   }
-  body .section6 .section6-part2 {
+  body .main_desk .section6 .section6-part2 {
     height: 200px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  body .section6 .section6-part2-question {
+  body .main_desk .section6 .section6-part2-question {
     width: 420px;
     height: 60px;
     margin-bottom: 14px;
     margin-right: 30px;
     transition: 0.5s;
   }
-  body .section6 .section6-part2-question .section6-part2-question-p1 {
+  body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 {
     height: 60px;
     font-size: 14px;
   }
-  body .section6 .section6-part2-question .section6-part2-question-p1 p {
+  body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 p {
     margin: 22px 0 0 0;
   }
-  body .section6 .section6-part2-question .section6-part2-question-p1 .hidden {
+  body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 .hidden {
     font-size: 12px;
   }
-  body .section6 .section6-part2-question .section6-part2-question-img {
+  body .main_desk .section6 .section6-part2-question .section6-part2-question-img {
     height: 18px;
     width: 18px;
     padding: 6px;
@@ -770,7 +770,7 @@ body .section6 .section6-part2-question {
     border-radius: 50px;
     transition: 0.5s;
   }
-  body .section6 .section6-part2-question {
+  body .main_desk .section6 .section6-part2-question {
     display: flex;
     flex-direction: row;
   }
@@ -779,12 +779,12 @@ body .section6 .section6-part2-question {
   body main {
     padding: 50px 20px 25px 20px;
   }
-  body .main-title-caption {
+  body .main_desk .main-title-caption {
     font-size: 34px;
     letter-spacing: 1.44px;
     margin-bottom: 0px;
   }
-  body .main-title-text {
+  body .main_desk .main-title-text {
     width: 450px;
     font-size: 16px;
     letter-spacing: 0px;
@@ -792,32 +792,32 @@ body .section6 .section6-part2-question {
     font-weight: 200;
     margin-bottom: 9px;
   }
-  body .main-title-btn {
+  body .main_desk .main-title-btn {
     width: 148px;
     height: 36px;
     margin-top: 6px;
     margin-right: 10px;
   }
-  body .main-title-btn p {
+  body .main_desk .main-title-btn p {
     font-size: 12px;
   }
-  body .main-title-btn2 {
+  body .main_desk .main-title-btn2 {
     width: 148px;
     height: 36px;
     margin-top: 6px;
     margin-left: 10px;
   }
-  body .main-title-btn2 p {
+  body .main_desk .main-title-btn2 p {
     padding-left: 2px;
     font-size: 12px;
   }
-  body .special-arrow {
+  body .main_desk .special-arrow {
     width: 40px;
     height: 10px;
     display: inline-block;
     position: relative;
   }
-  body .special-arrow::before {
+  body .main_desk .special-arrow::before {
     content: "";
     display: block;
     width: 8px;
@@ -830,7 +830,7 @@ body .section6 .section6-part2-question {
     position: relative;
     transform-origin: 50% 50%;
   }
-  body .special-arrow::after {
+  body .main_desk .special-arrow::after {
     content: "";
     display: block;
     top: -22%;
@@ -840,20 +840,20 @@ body .section6 .section6-part2-question {
     position: relative;
     transform-origin: 50% 50%;
   }
-  body .right3::before {
+  body .main_desk .right3::before {
     transform: rotate(45deg);
     margin: -4px 0 0 -52px;
   }
-  body .right3::after {
+  body .main_desk .right3::after {
     width: 24px;
     height: 0;
     border-width: 2px 0 0 0;
     transform: translate(-84px, 1px);
   }
-  body .main-title {
+  body .main_desk .main-title {
     margin-bottom: 56px;
   }
-  body .vid_sec {
+  body .main_desk .vid_sec {
     position: absolute;
     left: 0%;
     height: 356px;
@@ -862,17 +862,17 @@ body .section6 .section6-part2-question {
     border-top-right-radius: 275px 275px;
     border-bottom-right-radius: 275px 275px;
   }
-  body .vid_sec .video-container {
+  body .main_desk .vid_sec .video-container {
     position: relative;
     width: 100%;
     height: 100px;
     overflow: hidden;
   }
-  body .main-title2 {
+  body .main_desk .main-title2 {
     margin: 504px 0 0 0;
     padding: 0px 52px 0px 53px;
   }
-  body .main-title2 .main-title-caption {
+  body .main_desk .main-title2 .main-title-caption {
     margin: 0 0 6px 0;
     font-size: 30px;
     line-height: 40px;
@@ -881,80 +881,80 @@ body .section6 .section6-part2-question {
     text-align: justify;
     font-weight: bolder;
   }
-  body .main-title2 .main-title-text {
+  body .main_desk .main-title2 .main-title-text {
     font-size: 16px;
     width: 400px;
     line-height: 21px;
     margin: 10px 0 0 0;
   }
-  body .main-title2 .main-title-btn {
+  body .main_desk .main-title2 .main-title-btn {
     margin: 15px 15px 20px 0px;
   }
-  body .main-title2_sec2-img {
+  body .main_desk .main-title2_sec2-img {
     width: 434px;
   }
-  body .section-3 .main-title-caption {
+  body .main_desk .section-3 .main-title-caption {
     font-size: 28px;
     margin-top: 48px;
     letter-spacing: 1px;
   }
-  body .section-3 .section3-part2 {
+  body .main_desk .section-3 .section3-part2 {
     margin: 22px 0 23px 0;
   }
-  body .section-3 .section3-part2-block {
+  body .main_desk .section-3 .section3-part2-block {
     width: 260px;
     height: 284px;
   }
-  body .section-3 .U-img {
+  body .main_desk .section-3 .U-img {
     margin: 38px 0px 18px 0px;
     font-size: 42px;
     line-height: 66px;
     width: 70px;
     height: 70px;
   }
-  body .section-3 .section3-part2-block-caption {
+  body .main_desk .section-3 .section3-part2-block-caption {
     font-size: 18px;
     margin-bottom: 12px;
   }
-  body .section-3 .section3-part2-text {
+  body .main_desk .section-3 .section3-part2-text {
     width: 185px;
     font-size: 14px;
     line-height: 22px;
     margin: 0 0 20px 0;
   }
-  body .section4-part2-block {
+  body .main_desk .section4-part2-block {
     width: 170px;
     height: 304px;
     padding: 0 45px 0 45px;
   }
-  body .section4-part2-block .section4-part2-block-portion {
+  body .main_desk .section4-part2-block .section4-part2-block-portion {
     font-size: 14px;
   }
-  body .section4-part2-block .section4-part2-caption {
+  body .main_desk .section4-part2-block .section4-part2-caption {
     font-size: 18px;
   }
-  body .section4-part2-block .section4-part2-price {
+  body .main_desk .section4-part2-block .section4-part2-price {
     font-size: 25px;
   }
-  body .section-4 {
+  body .main_desk .section-4 {
     margin-top: 70px;
   }
-  body .section-4 .main-title-caption {
+  body .main_desk .section-4 .main-title-caption {
     font-size: 30px;
   }
-  body .section-4 .section4-part2 {
+  body .main_desk .section-4 .section4-part2 {
     margin: 22px 0 24px 0;
   }
-  body .section-4 .Tea-img {
+  body .main_desk .section-4 .Tea-img {
     margin: 4px 0 12px 0;
     align-self: center;
     width: 130px;
     height: 130px;
   }
-  body .section5 {
+  body .main_desk .section5 {
     margin-top: 40px;
   }
-  body .section5 .section5-part2 {
+  body .main_desk .section5 .section5-part2 {
     margin-top: 24px;
     display: flex;
     flex-direction: row;
@@ -962,29 +962,29 @@ body .section6 .section6-part2-question {
     align-items: center;
     margin-bottom: 5px;
   }
-  body .section5 .section4-part2-block {
+  body .main_desk .section5 .section4-part2-block {
     width: 260px;
     height: 294px;
   }
-  body .section5 .section3-part2-block-caption {
+  body .main_desk .section5 .section3-part2-block-caption {
     font-size: 18px;
     margin: 10px 0 0 0;
   }
-  body .section5 .main-title-caption {
+  body .main_desk .section5 .main-title-caption {
     font-size: 31px;
     padding-top: 20px;
     letter-spacing: 0px;
   }
-  body .section5-status {
+  body .main_desk .section5-status {
     font-size: 14px;
     margin: 2px 0 2px 0;
   }
-  body .Photo-img {
+  body .main_desk .Photo-img {
     width: 75px;
     height: 75px;
     margin-top: 20px;
   }
-  body .section5-part2-text {
+  body .main_desk .section5-part2-text {
     width: 200px;
     height: 71px;
     font-size: 13px;
@@ -992,61 +992,61 @@ body .section6 .section6-part2-question {
     letter-spacing: 0px;
     margin: 0 0 65px 0;
   }
-  body .section5-part2-part3 {
+  body .main_desk .section5-part2-part3 {
     height: 44px;
   }
-  body .section5-part2-semipart {
+  body .main_desk .section5-part2-semipart {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
-  body .leftarrow {
+  body .main_desk .leftarrow {
     background-color: #8A8A8A;
     width: 69px;
     height: 3px;
     margin-right: 5px;
     transition: 0.7s;
   }
-  body .rightarrow {
+  body .main_desk .rightarrow {
     background-color: #8A8A8A;
     width: 69px;
     height: 3px;
     margin-left: 5px;
     transition: 0.7s;
   }
-  body .section5-part2-right:hover {
+  body .main_desk .section5-part2-right:hover {
     width: 220px;
   }
-  body .section5-part2-right:hover .rightarrow {
+  body .main_desk .section5-part2-right:hover .rightarrow {
     width: 119px;
   }
-  body .section5-part2-right:hover .rightarrow_img {
+  body .main_desk .section5-part2-right:hover .rightarrow_img {
     margin-left: 100px;
   }
-  body .section5-part2-left:hover {
+  body .main_desk .section5-part2-left:hover {
     width: 220px;
   }
-  body .section5-part2-left:hover .leftarrow {
+  body .main_desk .section5-part2-left:hover .leftarrow {
     width: 119px;
   }
-  body .section5-part2-left:hover .leftarrow_img {
+  body .main_desk .section5-part2-left:hover .leftarrow_img {
     margin-right: 100px;
   }
-  body .section5-part2-left {
+  body .main_desk .section5-part2-left {
     width: 200px;
     height: 40px;
   }
-  body .section5-part2-right {
+  body .main_desk .section5-part2-right {
     width: 200px;
     height: 40px;
   }
-  body .leftarrow_img {
+  body .main_desk .leftarrow_img {
     height: 40px;
     width: 40px;
     margin-right: 50px;
   }
-  body .rightarrow_img {
+  body .main_desk .rightarrow_img {
     height: 40px;
     width: 40px;
     margin-left: 50px;
@@ -1054,8 +1054,65 @@ body .section6 .section6-part2-question {
 }
 body .section7 {
   padding: 100px 0 100px 0;
-  display: flex;
+  display: none;
   justify-content: space-evenly;
+}
+body .section7 .main-title-caption {
+  font-size: 53px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: #4f9e00;
+  margin: 8px 0 10px 0;
+  font-weight: bolder;
+  text-align: center;
+}
+body .section7 .main-title-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .section7 .main-title-btn p {
+  padding-left: 10px;
+}
+body .section7 .special-arrow {
+  width: 60px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+}
+body .section7 .special-arrow::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: 46%;
+  left: 153%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px 2px 0 0;
+  position: relative;
+  transform-origin: 50% 50%;
+}
+body .section7 .special-arrow::after {
+  content: "";
+  display: block;
+  top: 4%;
+  left: 163%;
+  border-style: solid;
+  border-color: #ffffff;
+  position: relative;
+  transform-origin: 50% 50%;
+}
+body .section7 .right3::before {
+  transform: rotate(45deg);
+  margin: -4px 0 0 -52px;
+}
+body .section7 .right3::after {
+  width: 38px;
+  height: 0;
+  border-width: 2px 0 0 0;
+  transform: translate(-84px, 1px);
 }
 body .section7 .section7-login {
   position: relative;
@@ -1167,7 +1224,117 @@ body .section7 .img {
   height: 600px;
   margin: 35px 40px 40px 45px;
   background-image: url(../img/Vector\ 7.svg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1025px) {
+  body .section7 .special-arrow {
+    width: 50px;
+  }
+  body .section7 .special-arrow::after {
+    top: 9%;
+    left: 190%;
+  }
+  body .section7 .right3::after {
+    width: 26px;
+  }
+  body .section7 .special-arrow::before {
+    width: 8px;
+    height: 8px;
+    top: 40%;
+    left: 160%;
+  }
+  body .section7 .main-title-caption {
+    font-size: 33px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: #4f9e00;
+    margin: 8px 0 10px 0;
+    font-weight: bolder;
+    text-align: center;
+  }
+  body .section7 .section7-consultation {
+    font-size: 33px;
+    margin-bottom: 8px;
+    margin-top: 40px;
+    width: 200px;
+  }
+  body .section7 .section7-consultation-description {
+    width: 540px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #303030;
+    margin: 0 0 0 0;
+  }
+  body .section7 .main-title-btn {
+    height: 45px;
+    width: 190px;
+    font-size: 16px;
+  }
+  body .section7 .main-title-btn p {
+    padding-left: 0px;
+  }
+  body .section7 .name {
+    width: 328px;
+    height: 50px;
+    font-size: 16px;
+    margin: 23px 0 0 0;
+  }
+  body .section7 .name:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 55px #fff !important;
+    box-shadow: inset 0 0 0 55px #fff !important;
+  }
+  body .section7 .name :placeholder-shown {
+    color: #9b9a9a;
+    letter-spacing: 1px;
+  }
+  body .section7 .namelabel {
+    top: 155px;
+    font-size: 15px;
+  }
+  body .section7 .maillabel {
+    top: 233px;
+    font-size: 15px;
+  }
+  body .section7 .img_input1 {
+    top: 183px;
+    margin-left: 312px;
+    width: 16px;
+    height: 17px;
+  }
+  body .section7 .img_input2 {
+    top: 261px;
+    margin-left: 312px;
+    width: 18px;
+    height: 15px;
+  }
+  body .section7 .main-title-btn {
+    margin: 22px 0 0 0;
+  }
+  body .section7 .checkbox-div {
+    flex-direction: row;
+    font-size: 16px;
+    width: 480px;
+    height: 40px;
+  }
+  body .section7 .section7-checkbox {
+    width: 17px;
+    height: 17px;
+    padding-bottom: 20px;
+    margin: 3px 10px 0 1px;
+  }
+  body .section7 .section7-checkbox-label {
+    width: 400px;
+    font-size: 12px;
+  }
+  body .section7 .img {
+    align-self: center;
+    width: 720px;
+    height: 400px;
+    margin: 35px 40px 40px 45px;
+    background-size: cover;
+  }
 }
 body footer {
   font-family: "Montserrat", sans-serif;

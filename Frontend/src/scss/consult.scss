@@ -1,7 +1,72 @@
 .section7{
     padding: 100px 0 100px 0;
-    display: flex;
+    display: none;
     justify-content: space-evenly;
+
+    .main-title-caption{
+        @extend %font1;
+        font-size: 53px;
+        letter-spacing: 3px;
+        font-weight: 900;
+        color: $color_1;
+        margin: 8px 0 10px 0 ;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .main-title-btn{
+        p{
+            padding-left: 10px;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        @extend %button1;  
+    }
+
+    .special-arrow{
+        width: 60px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .special-arrow::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        top: 46%;
+        left: 153%;
+        border-style: solid;
+        border-color: #ffffff;
+        border-width: 2px 2px 0 0;
+        position: relative;
+        transform-origin: 50% 50%;
+    }
+    .special-arrow::after {
+        content: '';
+        display: block;
+        top: 4%;
+        left: 163%;
+        border-style: solid;
+        border-color:#ffffff;
+        position: relative;
+        transform-origin: 50% 50%;
+    }
+    
+    .right3::before { 
+        transform: rotate(45deg); 
+        margin: -4px 0 0 -52px;
+    }
+    .right3::after { 
+        width: 38px;
+        height: 0;
+        border-width: 2px 0 0 0;
+        transform: translate(-84px, 1px);
+    }
+
     .section7-login{
         position: relative;
         width: 550px;
@@ -132,8 +197,140 @@
         height: 600px;
         margin:  35px 40px 40px 45px;
         background-image: url(../img/Vector\ 7.svg);
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     
+}
+
+@media screen and (max-width: 1025px){
+    .section7{
+        .special-arrow{
+            width: 50px;
+        }
+
+        .special-arrow::after {
+            top: 9%;
+            left: 190%;
+        }
+
+        .right3::after { 
+            width: 26px;
+        }
+
+        .special-arrow::before {
+            width: 8px;
+            height: 8px;
+            top: 40%;
+            left: 160%;
+        }
+
+        .main-title-caption{
+            font-size: 33px;
+            letter-spacing: 2px;
+            font-weight: 900;
+            color: $color_1;
+            margin: 8px 0 10px 0 ;
+            font-weight: bolder;
+            text-align: center;
+        }
+    
+        .section7-consultation{
+            font-size: 33px;
+            margin-bottom: 8px;
+            margin-top: 40px;
+            width: 200px;
+        }
+
+        .section7-consultation-description{
+            width: 540px;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            color: #303030;
+            margin: 0 0 0 0;
+        }
+    
+        .main-title-btn{
+            p{
+                padding-left: 0px;
+            }
+            height: 45px;
+            width: 190px;
+            font-size: 16px;
+        }
+
+        .name{
+            width: 328px;
+            height: 50px;
+            font-size: 16px;
+            margin: 23px 0 0 0;
+        }
+        
+        .name:-webkit-autofill {
+             -webkit-box-shadow: inset 0 0 0 55px #fff!important;
+            box-shadow: inset 0 0 0 55px #fff!important;
+        }
+        
+        .name :placeholder-shown{
+            color: #9b9a9a;
+            letter-spacing: 1px;
+        }
+
+        .namelabel{
+            top: 155px;
+            font-size: 15px;
+        }
+        
+        .maillabel{
+            top: 233px;
+            font-size: 15px;
+        }
+        
+        .img_input1{
+            top: 183px;
+            margin-left: 312px;
+            width: 16px;
+            height: 17px;
+        }
+        
+        .img_input2{
+            top: 261px;
+            margin-left: 312px;
+            width: 18px;
+            height: 15px;
+        }
+    
+        .main-title-btn{
+            margin: 22px 0 0 0;
+        }
+    
+        .checkbox-div{
+            flex-direction: row;
+            font-size: 16px;
+            width: 480px;
+            height: 40px;
+        }
+        
+        .section7-checkbox{
+            width: 17px;
+            height: 17px;
+            padding-bottom: 20px;
+            margin: 3px 10px 0 1px;
+        }
+        
+        .section7-checkbox-label{
+            width: 400px;
+            font-size: 12px;
+        }
+        
+        .img{
+            align-self: center;
+            width: 720px;
+            height: 400px;
+            margin:  35px 40px 40px 45px;
+            background-size: cover;
+        }
+    }
 }
 

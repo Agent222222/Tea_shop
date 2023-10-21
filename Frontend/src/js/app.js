@@ -2,9 +2,9 @@ import * as home from "../js/home.js"
 import * as shop from "../js/shop.js"
 import * as contact from "../js/contact.js"
 
-home();
-shop();
-contact();
+home.home();
+shop.shop();
+contact.contact();
 const questions = document.querySelectorAll('.section6-part2-question');
 
 function resetAllElements() {
@@ -13,7 +13,6 @@ function resetAllElements() {
         var tabWidth = document.documentElement.clientWidth;
         const answer = question.querySelector('.hidden');
         const parent = image.parentElement;
-        console.log(tabWidth);
         image.style.border = "0px";
         image.style.transform = "rotate(0deg)";
         answer.style.height = '0';
@@ -31,7 +30,6 @@ questions.forEach((question) => {
     const answer = question.querySelector('.hidden');
     const parent = image.parentElement;
     let clickCount = 0;
-    console.log(tabWidth);
     image.addEventListener("click", (event) => {
         resetAllElements();
 
@@ -51,4 +49,14 @@ questions.forEach((question) => {
         }
     });
 });
+
+let btn = document.querySelector('.consult-sub');
+let check = document.getElementById("cons_check");
+btn.onclick = function() {
+    if(check.checked){
+        
+    }else{
+        alert("You have not accepted the terms!");
+    }
+};
 
