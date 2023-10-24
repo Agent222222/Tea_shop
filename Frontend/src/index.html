@@ -10,6 +10,14 @@
         @@include('html/consultation.html',{})
     </main>
     @@include('html/footer.html',{})
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("yfxHEDuYHORe-BsW0");
+        })();
+    </script>
     <script src="js/app.min.js"></script>
 </body>
 </html>

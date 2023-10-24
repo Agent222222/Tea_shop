@@ -1,33 +1,23 @@
 export const cons = () => {
-    let btn = document.querySelector('.consult-sub');
+    const btn = document.querySelector('.consult-sub');
     let check = document.getElementById("cons_check");
     let form = document.getElementById("sect7-log");
-    btn.onclick = function() {
+    btn.addEventListener("click", (event) => {
         "use strict"
-        
         if(check.checked){
-
-            async function formSend(e){
-                e.preventDefault();
-                let error = formValidate(form);
-                let formData = new FormData(form);
-
-                if(error === 0){
-                    form.classList.add('_sending');
-                    // let response = await fetch('sendmail.php', {
-                    //     method: 'POST',
-                    //     body: formData
-                    // });
-                    // if(response.ok){
-                    //     let result = await response.json();
-                    //     alert(result.message);
-                    //     form.reset();
-                    // }else{
-                    //     alert("Error of response")
-                    // }
-                }else{
-                    alert("fill all inputs");
-                }
+            let error = formValidate(form);
+            let formData = new FormData(form);
+            if(error === 0){
+            console.log("try to send");   
+            let params = {
+                from_name: document.getElementById('FromName').value,
+                from_email: document.getElementById('FromMail').value,
+            }    
+            emailjs.send("service_a7q9xqb","template_zg22rz3", params).then(function(res){
+                alert('Successfully sent' + res.status);
+            })
+            }else{
+                alert("fill all inputs");
             }
 
         }else{
@@ -36,7 +26,6 @@ export const cons = () => {
         function formValidate(form) {
             let error = 0;
             let formReq = document.querySelectorAll('._req');
-
             for(let i = 0; i < formReq.length; i++){
                 const input = formReq[i];
                 formRemoveError(input);
@@ -51,6 +40,7 @@ export const cons = () => {
                         error++;
                 }
             }
+            return error;
         }
         function formAddError(input) {
             input.parentElement.classList.add('_error');
@@ -64,6 +54,5 @@ export const cons = () => {
         function emailTest(input) {
            return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
         }
-
-    };
+    });
 }

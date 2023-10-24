@@ -1204,6 +1204,14 @@ body .section7 .img_input2 {
 body .section7 .main-title-btn {
   margin: 22px 0 0 0;
 }
+body .section7 .navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFFFFF;
+}
 body .section7 .checkbox-div {
   flex-direction: row;
   font-size: 16px;
