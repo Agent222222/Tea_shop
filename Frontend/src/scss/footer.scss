@@ -92,6 +92,11 @@ footer{
         padding: 0 6% 0 6%;
         .footer_section{
             margin: 60px 0 0 0 ;
+            .footer_subsc-section{
+                .button-subscription{
+                    height: 34px;
+                }
+            }
         }
     }
 }

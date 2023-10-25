@@ -1,0 +1,153 @@
+
+.section8{
+    .sub_section8_serch {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        margin: 0px 30px 0px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        .name {
+            justify-items: center;
+            margin: 0 20px 0 20px;
+            height: 55px;
+            border-radius: 12px;
+            width: 65.5%;
+        }
+        .filter {
+            justify-items: center;
+            margin: 0 ;
+            height: 55px;
+            border-radius: 12px;
+            width: 13%;
+            min-width: 193px;
+        }
+
+        .serach_img{
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 0px;
+        }
+
+        .img_input_search {
+            position: absolute;
+            right:35px;
+            width: 30px;
+            height: 30px;
+            z-index: 2;
+        }
+        
+    }
+    
+    .main-title-btn{
+            display: inline-flex;
+            position: relative;
+            min-width: 270px;
+            p{
+                font-size: 22px;
+                padding: 0;
+                margin: 0px auto;
+            }
+            margin: 0 20px 0 20px;
+        }
+    ._req {
+
+    }
+    
+    .sub_section8_show {
+        display: flex;
+        flex-direction: row;
+        .sub_section8_status {
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            margin: 65px 30px 40px 30px;
+            padding: 12px 0 10px 0;
+            width: 390px;
+            .main-title-btn{
+                margin: 32px 38px 0 38px;
+                height: 62px;
+                width: 310px;
+            }
+
+            .sub_section8_status-sect {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 37px 0 37px;
+                .fromlabel{
+                    font-family: Poppins;
+                    position: absolute;
+                    font-weight: 600;
+                    top: 595px;
+                    left: 180px;
+                    padding: 0 4px 0 4px;
+                    background-color: $color_4;
+                }
+
+                .tolabel{
+                    font-family: Poppins;
+                    position: absolute;
+                    font-weight: 600;
+                    top: 595px;
+                    left: 338px;
+                    padding: 0 4px 0 4px;
+                    background-color: $color_4;
+                }
+
+                .cost{
+                    height: 52px;
+                    width: 130px;
+                    margin: 70px 8px 0 0;
+                }
+            }
+            .sub_section8_status-caption {
+                margin: 10px 0 0 0;
+                height: 30px;
+                width: 100%;
+                font-size: 22px;
+                font-family: Poppins;
+                font-weight: 600;
+            }
+            .section7-checkbox {
+                align-self: flex-end;
+                width: 20px;
+                height: 20px;
+                border-radius: 60px;
+            }
+            .sub_section8_status-ch {
+                margin: 15px 0 7px 0;
+                padding-left: 15px;
+                letter-spacing: 0.2px;
+                font-size: 20px;
+                font-family: Poppins;
+                font-weight: 600;
+                width: 265px;
+                height: 20px;
+            }
+            .price {
+        
+            }
+            .namelabel {
+        
+            }
+            .name {
+        
+            }
+            .maillabel {
+        
+            }
+            .category {
+        
+            }
+            .type {
+        
+            }
+            .main-title-btn {
+        
+            }
+        }
+    }
+    
+}
