@@ -1,6 +1,15 @@
 import * as from from "../js/from.js"
 
-from.cons();
+var currentPath = window.location.pathname;
+
+
+if(currentPath === '/contact.html'){
+    from.cons(); 
+}else if(currentPath === '/cart.html'){
+
+}else if(currentPath === '/shop.html'){
+    
+}
 
 const questions = document.querySelectorAll('.section6-part2-question');
 

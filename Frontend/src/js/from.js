@@ -6,9 +6,8 @@ export const cons = () => {
         "use strict"
         if(check.checked){
             let error = formValidate(form);
-            let formData = new FormData(form);
             if(error === 0){
-            console.log("try to send");   
+            
             let params = {
                 from_name: document.getElementById('FromName').value,
                 from_email: document.getElementById('FromMail').value,

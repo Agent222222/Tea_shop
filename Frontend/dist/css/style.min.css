@@ -1243,7 +1243,7 @@ body .section7 .section7-checkbox-label {
   text-align: start;
 }
 body .section7 .name._error {
-  box-shadow: 0 0 15px;
+  box-shadow: 0 0 15px red;
 }
 body .section7 .check_box_sec {
   display: flex;
