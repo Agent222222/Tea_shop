@@ -1,5 +1,5 @@
 import * as from from "../js/from.js"
-
+import * as shop from "../js/shop.js"
 var currentPath = window.location.pathname;
 
 
@@ -8,7 +8,7 @@ if(currentPath === '/contact.html'){
 }else if(currentPath === '/cart.html'){
 
 }else if(currentPath === '/shop.html'){
-    
+    shop.work();
 }
 
 const questions = document.querySelectorAll('.section6-part2-question');

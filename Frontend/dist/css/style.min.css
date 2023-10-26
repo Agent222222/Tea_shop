@@ -1375,6 +1375,7 @@ body .section8 .sub_section8_serch {
   margin: 0px 30px 0px 30px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
 }
 body .section8 .sub_section8_serch .name {
   justify-items: center;
@@ -1425,9 +1426,10 @@ body .section8 .sub_section8_show .sub_section8_status {
   margin: 65px 30px 40px 30px;
   padding: 12px 0 10px 0;
   width: 390px;
+  background-color: #FFFFFF;
 }
 body .section8 .sub_section8_show .sub_section8_status .main-title-btn {
-  margin: 32px 38px 0 38px;
+  margin: 32px 38px 10px 38px;
   height: 62px;
   width: 310px;
 }
@@ -1457,7 +1459,114 @@ body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect
 body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .cost {
   height: 52px;
   width: 130px;
-  margin: 70px 8px 0 0;
+  margin: 16px 8px 0 0;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect * {
+  font: inherit;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect #a {
+  align-items: center;
+  height: 50%;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect #b {
+  height: 50%;
+  align-items: center;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .wrap {
+  --dif: calc(var(--max) - var(--min));
+  display: grid;
+  grid-template: repeat(2, max-content) 1em/1fr 1fr;
+  position: relative;
+  margin: 1.1em auto;
+  width: 100%;
+  height: 8px;
+  padding-top: 12px;
+  background: linear-gradient(0deg, #ccc 8px, transparent 0);
+  font-family: ubuntu mono, consolas, monaco, monospace;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .wrap::before, body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .wrap::after {
+  grid-column: 1/span 2;
+  grid-row: 3;
+  height: 100%;
+  background: #4f9e00;
+  content: "";
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .wrap::before {
+  height: 8px;
+  margin-left: calc((var(--a) - var(--min)) / var(--dif) * 100%);
+  width: calc((var(--b) - var(--a)) / var(--dif) * 100%);
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .wrap::after {
+  height: 8px;
+  margin-left: calc((var(--b) - var(--min)) / var(--dif) * 100%);
+  width: calc((var(--a) - var(--b)) / var(--dif) * 100%);
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect [id=multi-lbl] {
+  grid-column: 1/span 2;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .sr-only {
+  position: absolute;
+  clip-path: inset(50%);
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range] {
+  grid-column: 1/span 2;
+  grid-row: 3;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background: none; /* get rid of white Chrome background */
+  color: #a0a0a0;
+  pointer-events: none;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range]::-webkit-slider-runnable-track, body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range]::-webkit-slider-thumb, body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range] {
+  -webkit-appearance: none;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range]::-webkit-slider-thumb {
+  border: none; /* get rid of Firefox thumb border */
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 20px; /* get rid of Firefox corner rounding */
+  background: currentcolor;
+  pointer-events: auto;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range]::-moz-range-thumb {
+  border: none; /* get rid of Firefox thumb border */
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 20px; /* get rid of Firefox corner rounding */
+  background: currentcolor;
+  pointer-events: auto;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range]:focus {
+  z-index: 2;
+  outline: dotted 1px currentcolor;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range]:focus, body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect input[type=range]:focus + output {
+  color: #a0a0a0;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect output {
+  grid-row: 2;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect output:last-child {
+  text-align: right;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect output::after {
+  counter-reset: c var(--c);
+  content: "--" attr(for) ": " counter(c) ";";
 }
 body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-caption {
   margin: 10px 0 0 0;
@@ -1560,6 +1669,10 @@ body footer .footer_section .footer_subsc-section .button-subscription {
   line-height: 30px;
   margin: 0 0 15px 0;
   color: #FFFFFF;
+}
+body footer .footer_section .footer_subsc-section .navigation {
+  display: flex;
+  justify-content: center;
 }
 body footer .footer_section .footer_subsc-section .contact_img_section {
   flex-direction: row;
