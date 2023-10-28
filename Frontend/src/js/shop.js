@@ -4,16 +4,22 @@ export const work = () => {
     const fromran = document.getElementById('a');
     const toran = document.getElementById('b');
     const groups = document.querySelectorAll('.sub_section8_status-sect');
+    const find_req = document.querySelector('.find_btn');
 
     groups.forEach(group => {
         const checkboxes = group.querySelectorAll('.section7-checkbox');
-        checkboxes.forEach(checkbox => {
+        const labels = group.querySelectorAll('.sub_section8_status-ch');
+        checkboxes.forEach((checkbox, index) => {
             checkbox.addEventListener('change', function() {
                 checkboxes.forEach(otherCheckbox => {
                     if (otherCheckbox !== checkbox && otherCheckbox.checked) {
                         otherCheckbox.checked = false;
                     }
                 });
+                labels.forEach(label => {
+                    label.style.color = "#a0a0a0";
+                });
+                labels[index].style.color = 'black';
             });
         });
     });
@@ -38,9 +44,26 @@ export const work = () => {
                 toinpt.value =  _t.value;
             }
         }
-        
-        
        
     }, false);
+
+    find_req.addEventListener("click", (event) => {
+        groups.forEach((group, index) => {
+            let counter = 0;
+            
+            if(group.classList.contains("price") == false){
+                const checkboxes = group.querySelectorAll('.section7-checkbox');
+                const caption = group.querySelectorAll('.sub_section8_status-caption');
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked == true) {
+                        counter++;
+                        console.log(index);
+                    }
+                });
+            }
+            
+        });
+       
+    });
 
 }

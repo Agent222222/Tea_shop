@@ -1437,6 +1437,11 @@ body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect
   display: flex;
   flex-wrap: wrap;
   margin: 0 37px 0 37px;
+  border-radius: 15px;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .sub_section8_status-check {
+  display: flex;
+  flex-direction: row;
 }
 body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .fromlabel {
   font-family: Poppins;
@@ -1591,6 +1596,7 @@ body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-ch {
   font-weight: 600;
   width: 265px;
   height: 20px;
+  color: #a0a0a0;
 }
 body footer {
   font-family: "Montserrat", sans-serif;

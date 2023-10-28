@@ -78,6 +78,13 @@
                 display: flex;
                 flex-wrap: wrap;
                 margin: 0 37px 0 37px;
+                border-radius: 15px;
+
+                .sub_section8_status-check{
+                    display: flex;
+                    flex-direction: row;
+                }
+
                 .fromlabel{
                     font-family: Poppins;
                     position: absolute;
@@ -238,27 +245,7 @@
                 font-weight: 600;
                 width: 265px;
                 height: 20px;
-            }
-            .price {
-        
-            }
-            .namelabel {
-        
-            }
-            .name {
-        
-            }
-            .maillabel {
-        
-            }
-            .category {
-        
-            }
-            .type {
-        
-            }
-            .main-title-btn {
-        
+                color: #a0a0a0;
             }
         }
     }
