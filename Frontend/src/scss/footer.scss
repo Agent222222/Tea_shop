@@ -17,7 +17,8 @@ footer{
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .part1-footer{
+        .navigation{
+            justify-content: start;
             color: $color_2;
             width: 150px;
             font-size: 12px;
@@ -60,22 +61,27 @@ footer{
                 font-size: 12px;
             }
             .button-subscription{
-                width: 102px;
+                width: 100%;
                 height: 44px;
                 background: #478F00;
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-                border-radius: 5px;
                 border: none;
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 30px;
+                border-radius: 5px;
                 margin: 0 0 15px 0;
-                color: $color_4;
+                p{
+                    
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 30px;
+                    border: none;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    color: $color_4;
+                }
             }
 
             .navigation{
+                width: 100%;
                 display: flex;
                 justify-content: center;
             }

@@ -84,7 +84,7 @@ body main, body header {
   padding: 50px 100px 50px 100px;
 }
 
-body .section7 .section7-consultation-description, body .section7 .main-title-caption, body .main_desk .section5, body .main_desk .section4-part2-block, body .main_desk .section-3 .section3-part2-block-caption, body .main_desk .main-title-caption {
+body .payment_form .details_sect-caption, body .section7 .section7-consultation-description, body .section7 .main-title-caption, body .main_desk .section5, body .main_desk .section4-part2-block, body .main_desk .section-3 .section3-part2-block-caption, body .main_desk .main-title-caption {
   list-style-type: none;
   font-family: Poppins;
   font-size: 20px;
@@ -93,7 +93,7 @@ body .section7 .section7-consultation-description, body .section7 .main-title-ca
   color: #8A8A8A;
 }
 
-body .main-title-btn, body .main_desk .main-title-btn2, body .main_desk .main-title-btn {
+body .cart-title-btn, body .cart-title-btn2, body .main-title-btn, body .main_desk .main-title-btn2, body .main_desk .main-title-btn {
   width: 224px;
   height: 55px;
   color: #FFFFFF;
@@ -208,6 +208,7 @@ body .navigation {
   flex-direction: row;
   align-items: center;
   text-decoration: none;
+  justify-content: center;
   color: #FFFFFF;
   width: 100%;
   height: 100%;
@@ -256,7 +257,7 @@ body .main_desk .special-arrow::before {
   display: block;
   width: 10px;
   height: 10px;
-  top: 46%;
+  top: 47%;
   left: 153%;
   border-style: solid;
   border-color: #ffffff;
@@ -267,7 +268,7 @@ body .main_desk .special-arrow::before {
 body .main_desk .special-arrow::after {
   content: "";
   display: block;
-  top: 4%;
+  top: 1.5px;
   left: 163%;
   border-style: solid;
   border-color: #ffffff;
@@ -436,6 +437,8 @@ body .main_desk .section-3 .section3-part2-button {
 }
 body .main_desk .section-3 .main-title-btn {
   margin: 0px auto;
+  display: flex;
+  justify-content: center;
 }
 body .main_desk .section4-part2-block {
   display: flex;
@@ -1249,6 +1252,36 @@ body .section7 .check_box_sec {
   display: flex;
   flex-direction: row;
 }
+body .section7 .check_box_sec input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: #8A8A8A;
+  width: 28px;
+  height: 28px;
+  border: 0.15em solid #8A8A8A;
+  border-radius: 7px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+body .section7 .check_box_sec input[type=checkbox]::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  transform: scale(0);
+  background-image: url(../img/Group\ 427319235.svg);
+  background-size: cover;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+body .section7 .check_box_sec input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
 body .section7 .img {
   width: 720px;
   height: 600px;
@@ -1377,6 +1410,19 @@ body .section8 .sub_section8_serch {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   background-color: #FFFFFF;
 }
+body .section8 .sub_section8_serch .main-title-btn {
+  border-radius: 11px;
+  height: 58px;
+}
+body .section8 .sub_section8_serch input[type=search]::-webkit-search-decoration,
+body .section8 .sub_section8_serch input[type=search]::-webkit-search-cancel-button,
+body .section8 .sub_section8_serch input[type=search]::-webkit-search-results-button,
+body .section8 .sub_section8_serch input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+body .section8 .sub_section8_serch .search_inpt {
+  padding-right: 50px;
+}
 body .section8 .sub_section8_serch .name {
   justify-items: center;
   margin: 0 20px 0 20px;
@@ -1442,6 +1488,35 @@ body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect
 body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .sub_section8_status-check {
   display: flex;
   flex-direction: row;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .sub_section8_status-check input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: #8A8A8A;
+  width: 28px;
+  height: 28px;
+  border: 0.15em solid #8A8A8A;
+  border-radius: 7px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .sub_section8_status-check input[type=checkbox]::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  transform: scale(0);
+  background-image: url(../img/Group\ 427319235.svg);
+  background-size: cover;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .sub_section8_status-check input[type=checkbox]:checked::before {
+  transform: scale(1);
 }
 body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-sect .fromlabel {
   font-family: Poppins;
@@ -1588,7 +1663,7 @@ body .section8 .sub_section8_show .sub_section8_status .section7-checkbox {
   border-radius: 60px;
 }
 body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-ch {
-  margin: 15px 0 7px 0;
+  margin: 13px 0 9px 0;
   padding-left: 15px;
   letter-spacing: 0.2px;
   font-size: 20px;
@@ -1597,6 +1672,185 @@ body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-ch {
   width: 265px;
   height: 20px;
   color: #a0a0a0;
+}
+body .cart-title-btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #000;
+  background-color: #ffffff;
+  border: 1.5px solid #8A8A8A;
+}
+body .cart-title-btn2 p {
+  padding-left: 10px;
+  font-size: 16px;
+}
+body .cart-title-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .cart-title-btn p {
+  padding-left: 10px;
+  font-size: 16px;
+}
+body .special-arrow {
+  width: 60px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+}
+body .special-arrow::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: 46%;
+  left: 153%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px 2px 0 0;
+  position: relative;
+  transform-origin: 50% 50%;
+}
+body .special-arrow::after {
+  content: "";
+  display: block;
+  top: 4%;
+  left: 163%;
+  border-style: solid;
+  border-color: #ffffff;
+  position: relative;
+  transform-origin: 50% 50%;
+}
+body .right3::before {
+  transform: rotate(45deg);
+  margin: -4px 0 0 -52px;
+}
+body .right3::after {
+  width: 38px;
+  height: 0;
+  border-width: 2px 0 0 0;
+  transform: translate(-84px, 1px);
+}
+body .payment_form {
+  padding: 50px;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+  flex-wrap: wrap;
+}
+body .payment_form .Details_subsect {
+  width: 50%;
+  position: relative;
+}
+body .payment_form .Details_sect {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 27px;
+}
+body .payment_form .details_sect-caption {
+  position: relative;
+  width: 100%;
+  color: #000;
+  font-weight: 800;
+  font-size: 34px;
+  margin: 22px 0 0 4px;
+  letter-spacing: 1px;
+}
+body .payment_form .name {
+  margin: 33px 11px 0 11px;
+  height: 68px;
+  width: 90%;
+  font-size: 22px;
+}
+body .payment_form .name:placeholder-shown {
+  color: #9b9a9a;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+body .payment_form .namelabel {
+  position: absolute;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 5px;
+  top: 14px;
+  left: 27px;
+  letter-spacing: 1px;
+  background-color: #FFFFFF;
+}
+body .payment_form .img_input1 {
+  position: absolute;
+  width: 25px;
+  height: 27px;
+  top: 56px;
+  right: 7%;
+}
+body .payment_form .img_input2 {
+  position: absolute;
+  width: 29px;
+  height: 25px;
+  top: 54px;
+  right: 7%;
+}
+body .payment_form .Payment_sect {
+  margin-top: 50px;
+}
+body .payment_form .Payment_sect .payment_check {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0 0 10px;
+}
+body .payment_form .Payment_sect .payment_check input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: #8A8A8A;
+  width: 38px;
+  height: 38px;
+  border: 0.15em solid #8A8A8A;
+  border-radius: 7px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+body .payment_form .Payment_sect .payment_check input[type=checkbox]::before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  border-radius: 7px;
+  transform: scale(0);
+  background-image: url(../img/Group\ 427319235.svg);
+  background-size: cover;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+body .payment_form .Payment_sect .payment_check input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+body .payment_form .Payment_sect .payment_check .payment_check_txt {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 15px;
+  letter-spacing: 0.2px;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #a0a0a0;
+  height: fit-content;
+}
+body .payment_form .Payment_sect .online_paymentform {
+  display: none;
 }
 body footer {
   font-family: "Montserrat", sans-serif;
@@ -1619,7 +1873,8 @@ body footer .footer_section .uspace_logo_footer {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-body footer .footer_section .part1-footer {
+body footer .footer_section .navigation {
+  justify-content: start;
   color: #8A8A8A;
   width: 150px;
   font-size: 12px;
@@ -1662,21 +1917,25 @@ body footer .footer_section .footer_subsc-section .footer-name:placeholder-shown
   font-size: 12px;
 }
 body footer .footer_section .footer_subsc-section .button-subscription {
-  width: 102px;
+  width: 100%;
   height: 44px;
   background: #478F00;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 5px;
+  margin: 0 0 15px 0;
+}
+body footer .footer_section .footer_subsc-section .button-subscription p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
   border: none;
   font-family: "Inter";
   font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 30px;
-  margin: 0 0 15px 0;
   color: #FFFFFF;
 }
 body footer .footer_section .footer_subsc-section .navigation {
+  width: 100%;
   display: flex;
   justify-content: center;
 }

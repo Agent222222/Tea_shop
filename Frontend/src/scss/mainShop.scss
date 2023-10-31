@@ -10,6 +10,20 @@
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
         background-color: $color_4;
+        .main-title-btn{
+            border-radius: 11px;
+            height: 58px;
+        }
+
+        input[type=search]::-webkit-search-decoration,
+        input[type=search]::-webkit-search-cancel-button,
+        input[type=search]::-webkit-search-results-button,
+        input[type=search]::-webkit-search-results-decoration { display: none;}
+
+        .search_inpt{
+            padding-right: 50px; 
+        }
+
         .name {
             justify-items: center;
             margin: 0 20px 0 20px;
@@ -54,9 +68,6 @@
             }
             margin: 0 20px 0 20px;
         }
-    ._req {
-
-    }
     
     .sub_section8_show {
         display: flex;
@@ -83,6 +94,38 @@
                 .sub_section8_status-check{
                     display: flex;
                     flex-direction: row;
+
+                    input[type=checkbox] {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        background-color: #fff;
+                        margin: 0;
+                        font: inherit;
+                        color: $color_2;
+                        width: 28px;
+                        height: 28px;
+                        border: 0.15em solid $color_2;
+                        border-radius: 7px;
+                        transform: translateY(-0.075em);
+                        display: grid;
+                        place-content: center;
+                    }
+        
+                    input[type=checkbox]::before {
+                        content: "";
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 7px;
+                        transform: scale(0);
+                        background-image: url(../img/Group\ 427319235.svg);
+                        background-size: cover;
+                        transition: 120ms transform ease-in-out;
+                        box-shadow: inset 1em 1em var(--form-control-color);
+                    }
+        
+                    input[type="checkbox"]:checked::before {
+                        transform: scale(1);
+                    }
                 }
 
                 .fromlabel{
@@ -237,7 +280,7 @@
                 border-radius: 60px;
             }
             .sub_section8_status-ch {
-                margin: 15px 0 7px 0;
+                margin: 13px 0 9px 0;
                 padding-left: 15px;
                 letter-spacing: 0.2px;
                 font-size: 20px;

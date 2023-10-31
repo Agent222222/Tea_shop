@@ -1,0 +1,199 @@
+.cart-title-btn2{
+    p{
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    @extend %button1;  
+    color: #000;
+    background-color: #ffffff;
+    border: 1.5px solid $color_2;
+}
+
+.cart-title-btn{
+    p{
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    @extend %button1;  
+}
+
+.special-arrow{
+    width: 60px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.special-arrow::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 46%;
+    left: 153%;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px 2px 0 0;
+    position: relative;
+    transform-origin: 50% 50%;
+}
+.special-arrow::after {
+    content: '';
+    display: block;
+    top: 4%;
+    left: 163%;
+    border-style: solid;
+    border-color:#ffffff;
+    position: relative;
+    transform-origin: 50% 50%;
+}
+
+.right3::before { 
+    transform: rotate(45deg); 
+    margin: -4px 0 0 -52px;
+}
+.right3::after { 
+    width: 38px;
+    height: 0;
+    border-width: 2px 0 0 0;
+    transform: translate(-84px, 1px);
+}
+
+.payment_form{
+    padding: 50px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: $color_4;
+    flex-wrap: wrap;
+    .Details_subsect{
+        width: 50%;
+        position: relative;
+    }
+    .Details_sect{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 27px
+    }
+    .details_sect-caption{
+        @extend %font1;
+        position: relative;
+        width: 100%;
+        color: #000;
+        font-weight: 800;
+        font-size: 34px;
+        margin: 22px 0 0 4px;
+        letter-spacing: 1px;
+    }
+
+    .name{
+        margin: 33px 11px 0 11px ;
+        height: 68px;
+        width: 90%;
+        font-size: 22px;
+    }
+
+    .name:placeholder-shown{
+        color: #9b9a9a;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .namelabel{
+        position: absolute;
+        text-align: center;
+        font-family: Poppins;
+        font-weight: 800;
+        font-size: 20px;
+        padding: 5px;
+        top: 14px;
+        left: 27px;
+        letter-spacing: 1px;
+        background-color: $color_4;
+    }
+    .img_input1{
+        position: absolute;
+        width: 25px;
+        height: 27px;
+        top: 56px;
+        right: 7%;
+    }
+    .img_input2{
+        position: absolute;
+        width: 29px;
+        height: 25px;
+        top: 54px;
+        right: 7%;
+    }
+
+    .Payment_sect{
+        margin-top: 50px;
+
+        .payment_check{
+            display: flex;
+            flex-direction: row;
+            margin: 30px 0 0 10px;
+            input[type=checkbox] {
+                -webkit-appearance: none;
+                appearance: none;
+                background-color: #fff;
+                margin: 0;
+                font: inherit;
+                color: $color_2;
+                width: 38px;
+                height: 38px;
+                border: 0.15em solid $color_2;
+                border-radius: 7px;
+                transform: translateY(-0.075em);
+                display: grid;
+                place-content: center;
+            }
+
+            input[type=checkbox]::before {
+                content: "";
+                width: 38px;
+                height: 38px;
+                border-radius: 7px;
+                transform: scale(0);
+                background-image: url(../img/Group\ 427319235.svg);
+                background-size: cover;
+                transition: 120ms transform ease-in-out;
+                box-shadow: inset 1em 1em var(--form-control-color);
+            }
+
+            input[type=checkbox]:checked::before {
+                transform: scale(1);
+            }
+
+            .payment_check_txt{
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding-left: 15px;
+                letter-spacing: 0.2px;
+                font-size: 24px;
+                font-family: Poppins;
+                font-weight: 600;
+                color: #a0a0a0;
+                height: fit-content;
+            }
+
+           
+        }
+        .online_paymentform{
+            display: none;
+        }
+        
+    }
+}
+

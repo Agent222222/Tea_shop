@@ -1,12 +1,13 @@
 import * as from from "../js/from.js"
 import * as shop from "../js/shop.js"
+import * as cart from "../js/cart.js"
 var currentPath = window.location.pathname;
 
 
 if(currentPath === '/contact.html'){
     from.cons(); 
 }else if(currentPath === '/cart.html'){
-
+    cart.active();
 }else if(currentPath === '/shop.html'){
     shop.work();
 }
