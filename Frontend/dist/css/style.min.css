@@ -84,7 +84,7 @@ body main, body header {
   padding: 50px 100px 50px 100px;
 }
 
-body .payment_form .details_sect-caption, body .section7 .section7-consultation-description, body .section7 .main-title-caption, body .main_desk .section5, body .main_desk .section4-part2-block, body .main_desk .section-3 .section3-part2-block-caption, body .main_desk .main-title-caption {
+body .payment_form .details_sect-caption, body .main-title .main-title-caption, body .section7 .section7-consultation-description, body .section7 .main-title-caption, body .main_desk .section5, body .main_desk .section4-part2-block, body .main_desk .section-3 .section3-part2-block-caption, body .main_desk .main-title-caption {
   list-style-type: none;
   font-family: Poppins;
   font-size: 20px;
@@ -246,6 +246,9 @@ body .main_desk .main-title {
   align-items: center;
   margin: 2px 0 67px 0;
 }
+body .main_desk .main-title .main-title-caption {
+  font-size: 62px;
+}
 body .main_desk .special-arrow {
   width: 60px;
   height: 20px;
@@ -328,8 +331,7 @@ body .main_desk .main-title2 {
   display: flex;
   flex-direction: row;
   margin: 742px 0 0 0;
-  padding-left: 35px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 body .main_desk .main-title2 .main-title-caption {
   margin: 0 0 6px 0;
@@ -350,6 +352,7 @@ body .main_desk .main-title2 .main-title-btn {
 }
 body .main_desk .main-title2_sec {
   width: 625px;
+  padding-left: 60px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -511,6 +514,7 @@ body .main_desk .section-4 .main-title-btn {
 }
 body .main_desk .section5 {
   margin-top: 110px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1673,6 +1677,44 @@ body .section8 .sub_section8_show .sub_section8_status .sub_section8_status-ch {
   height: 20px;
   color: #a0a0a0;
 }
+body .section-cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .main-title .main-title-caption {
+  font-size: 43px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #4f9e00;
+  margin: 8px 0 10px 0;
+  font-weight: bolder;
+  text-align: center;
+}
+body .cart_section {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+}
+body .chosen_prod {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  min-height: 200px;
+}
+body .chosen_prod .confirmation_bar-caption {
+  width: fit-content;
+  letter-spacing: 2px;
+  font-size: 26px;
+  font-family: Poppins;
+  font-weight: 600;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
 body .cart-title-btn2 {
   display: flex;
   justify-content: center;
@@ -1681,20 +1723,26 @@ body .cart-title-btn2 {
   color: #000;
   background-color: #ffffff;
   border: 1.5px solid #8A8A8A;
+  margin: 20px 0 20px 0;
+  height: 64px;
+  width: 100%;
 }
 body .cart-title-btn2 p {
   padding-left: 10px;
-  font-size: 16px;
+  font-size: 24px;
 }
 body .cart-title-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin: 20px 0 20px 0;
+  height: 64px;
+  width: 100%;
 }
 body .cart-title-btn p {
   padding-left: 10px;
-  font-size: 16px;
+  font-size: 24px;
 }
 body .special-arrow {
   width: 60px;
@@ -1735,12 +1783,15 @@ body .right3::after {
   border-width: 2px 0 0 0;
   transform: translate(-84px, 1px);
 }
+body .pay-form {
+  position: relative;
+  width: 90%;
+  max-width: 1250px;
+  margin: 30px 0 60px 0;
+}
 body .payment_form {
   padding: 50px;
-  width: 60%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  background-color: #FFFFFF;
+  width: fit-content;
   flex-wrap: wrap;
 }
 body .payment_form .Details_subsect {
@@ -1778,12 +1829,13 @@ body .payment_form .namelabel {
   position: absolute;
   text-align: center;
   font-family: Poppins;
-  font-weight: 800;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 16px;
   padding: 5px;
   top: 14px;
   left: 27px;
   letter-spacing: 1px;
+  color: #8A8A8A;
   background-color: #FFFFFF;
 }
 body .payment_form .img_input1 {
@@ -1850,7 +1902,49 @@ body .payment_form .Payment_sect .payment_check .payment_check_txt {
   height: fit-content;
 }
 body .payment_form .Payment_sect .online_paymentform {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   display: none;
+  width: 98%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  height: fit-content;
+  padding: 10px 10px 30px 10px;
+  margin: 30px 0 30px 0;
+}
+body .payment_form .Payment_sect .online_paymentform .namelabel {
+  top: 13px;
+}
+body .confirmation_bar {
+  position: relative;
+  width: 25%;
+  max-width: 550px;
+  height: 280px;
+  padding: 30px 40px 30px 40px;
+  margin: 30px 0 30px 0;
+}
+body .confirmation_bar .confirmation_bar-caption {
+  letter-spacing: 2px;
+  font-size: 34px;
+  font-family: Poppins;
+  font-weight: 600;
+  margin: 0;
+}
+body .confirmation_bar .name {
+  display: none;
+}
+body .confirmation_bar .confirm_barp_cost {
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 800;
+  margin: 14px 0 10px 0;
+}
+body .confirmation_bar .confirm_bar_cost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 body footer {
   font-family: "Montserrat", sans-serif;

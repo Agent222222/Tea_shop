@@ -11,15 +11,11 @@ export const work = () => {
         const labels = group.querySelectorAll('.sub_section8_status-ch');
         checkboxes.forEach((checkbox, index) => {
             checkbox.addEventListener('change', function() {
-                checkboxes.forEach(otherCheckbox => {
-                    if (otherCheckbox !== checkbox && otherCheckbox.checked) {
-                        otherCheckbox.checked = false;
-                    }
-                });
-                labels.forEach(label => {
-                    label.style.color = "#a0a0a0";
-                });
-                labels[index].style.color = 'black';
+                if(checkbox.checked){
+                    labels[index].style.color = 'black';
+                }else{
+                    labels[index].style.color = "#a0a0a0";
+                }
             });
         });
     });
@@ -54,10 +50,10 @@ export const work = () => {
             if(group.classList.contains("price") == false){
                 const checkboxes = group.querySelectorAll('.section7-checkbox');
                 const caption = group.querySelectorAll('.sub_section8_status-caption');
-                checkboxes.forEach(checkbox => {
+                checkboxes.forEach((checkbox, ch_index)=> {
                     if (checkbox.checked == true) {
                         counter++;
-                        console.log(index);
+                        console.log("group = "+ index + " checkbox ="+ ch_index);
                     }
                 });
             }
