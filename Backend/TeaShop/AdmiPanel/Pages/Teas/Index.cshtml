@@ -1,0 +1,40 @@
+﻿@page
+@model AdmiPanel.Pages.Teas.IndexModel
+@{
+}
+
+<br>
+<h2>List of Teas</h2>
+<a class="btn btn-primary btn-sm" href="/Teas/Create">New Tea</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Image URL</th>
+			<th>Price</th>
+			<th>Sale Price</th>
+			<th>Created</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<thody>
+		@foreach (var item in Model.teas)
+		{
+			<tr>
+				<th>@item.Id</th>
+				<th>@item.Name</th>
+				<th>@item.Description</th>
+				<th>@item.Image</th>
+				<th>@item.Price</th>
+				<th>@item.SalePrice</th>
+				<th>@item.Created</th>
+				<th>
+					<a class="btn btn-primary btn-sm" href="/Teas/Edit?id=@item.Id">Edit</a>
+					<a class="btn btn-danger btn-sm" href="/Teas/Delete?id=@item.Id">Delete</a>
+				</th>
+			</tr>
+		}
+	</thody>
+</table>
