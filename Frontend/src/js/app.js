@@ -1,12 +1,14 @@
 import * as from from "../js/from.js"
 import * as shop from "../js/shop.js"
 import * as cart from "../js/cart.js"
+import filter from "../js/shop.js";
+import user_data from "../js/cart.js";
 var currentPath = window.location.pathname;
 const homenav = document.querySelector('.home');
 const shopnav = document.querySelector('.shop');
 const contactnav = document.querySelector('.contact');
 const cartnav = document.querySelector('.head_btn');
-
+const inst = document.querySelector('.footer_contact_img');
 if(currentPath === '/contact.html'){
 
     from.cons(); 
@@ -22,10 +24,18 @@ if(currentPath === '/contact.html'){
 
 }else if(currentPath === '/shop.html'){
 
+    // inst.addEventListener("click", (event) => {  /// check whether we can interact with filters here
+    //     if(filter.instrument){
+    //         alert("good");
+    //     }else{
+    //         alert("bad")
+    //     }
+    // });
     shop.work();
     shopnav.style.color = '#4f9e00'; 
     shopnav.style.textShadow = '1px 5px 6px #dadada';
     shopnav.style.transition = '0.5s';
+   
 
 }else if(currentPath === '/index.html'){
 
