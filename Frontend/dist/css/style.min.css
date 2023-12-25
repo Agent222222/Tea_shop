@@ -111,7 +111,8 @@ body .cart-title-btn, body .cart-title-btn2, body .main-title-btn, body .main_de
 
 body {
   margin: 0px;
-  background-color: #F9FFFD;
+  background-color: #F4FAF4;
+  justify-content: center;
 }
 body header {
   justify-content: space-between;
@@ -173,7 +174,7 @@ body header .head_btn_ctn .img_hedbtn2 {
   background-position: center;
   background-size: 34px;
   background-repeat: no-repeat;
-  background-color: #F9FFFD;
+  background-color: #F4FAF4;
   background-image: url(../img/image_2023-10-02_14-49-21.png);
 }
 @media screen and (max-width: 1025px) {
@@ -247,6 +248,7 @@ body .main_desk .main-title {
   margin: 2px 0 67px 0;
 }
 body .main_desk .main-title .main-title-caption {
+  margin-top: 30px;
   font-size: 62px;
 }
 body .main_desk .special-arrow {
@@ -317,12 +319,13 @@ body .main_desk .vid_sec {
   left: 0%;
   height: 548px;
   width: 94.5%;
-  background-color: #5c5c5c;
+  background-color: #ffffff;
   border-top-right-radius: 275px 275px;
   border-bottom-right-radius: 275px 275px;
 }
 body .main_desk .vid_sec video {
   object-fit: cover;
+  filter: brightness(1.3);
   height: 548px;
   border-top-right-radius: 275px 275px;
   border-bottom-right-radius: 275px 275px;
@@ -397,6 +400,7 @@ body .main_desk .section-3 .section3-part2-block {
   height: 436px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 270px 270px 10px 10px;
+  background-color: #FFFFFF;
   margin: 0% 2% 0% 2%;
 }
 body .main_desk .section-3 .U-img {
@@ -447,17 +451,17 @@ body .main_desk .section4-part2-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
   width: 210px;
   height: 394px;
   color: #000000;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 270px 270px 10px 10px;
+  background-color: #FFFFFF;
   margin: 0% 2% 0% 2%;
   padding: 0 60px 0 60px;
 }
 body .main_desk .section4-part2-block .section4-part2-block-portion {
-  margin: 0;
+  margin: 25px 0 0 0;
   font-size: 16px;
   font-weight: 900;
 }
@@ -486,10 +490,11 @@ body .main_desk .section-4 .section4-part2 {
   margin: 42px 0 52px 0;
 }
 body .main_desk .section-4 .Tea-img {
-  margin: 15px 0px 23px 0px;
+  margin: 0px auto;
+  margin-top: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-self: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -512,15 +517,26 @@ body .main_desk .section-4 .section3-part2-button {
 body .main_desk .section-4 .main-title-btn {
   margin: 0px auto;
 }
+body .main_desk .swiper-wrapper {
+  width: min-content;
+}
+body .main_desk .swiper-container {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
 body .main_desk .section5 {
-  margin-top: 110px;
-  margin-bottom: 50px;
+  margin: 110px 0 50px 0;
+  padding: 0 10px 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 1150px;
+  max-width: 1150px;
 }
 body .main_desk .section5 .section5-part2 {
   margin-top: 30px;
+  min-width: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -528,9 +544,12 @@ body .main_desk .section5 .section5-part2 {
   margin-bottom: 15px;
 }
 body .main_desk .section5 .section4-part2-block {
+  min-width: 0;
   align-items: center;
   padding: 0px;
   width: 350px;
+  margin: 0 0 20px 0;
+  background-color: #ffffff;
 }
 body .main_desk .section5 .section3-part2-block-caption {
   color: #000000;
@@ -683,7 +702,7 @@ body .main_desk .section6 .section6-caption .sp {
   justify-content: start;
 }
 body .main_desk .section6 .section6-part2 {
-  height: 300px;
+  height: 320px;
   display: flex;
   align-content: space-between;
   flex-direction: column;
@@ -691,34 +710,47 @@ body .main_desk .section6 .section6-part2 {
   padding: 0 30px 0 30px;
 }
 body .main_desk .section6 .section6-part2-question {
+  display: flex;
+  align-items: center;
   width: 670px;
-  height: 100px;
+  height: 110px;
   justify-content: space-between;
-  border-top: 1px solid #4f9e00;
+  background-color: #FFFFFF;
+  margin: 10px 15px 10px 0;
+  border-radius: 15px;
   transition: 0.5s;
 }
 body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: Poppins;
   font-size: 22px;
   font-weight: 900;
   letter-spacing: 0.1px;
-  padding-left: 2px;
+  margin: 0;
+  padding: 0 10px 0 30px;
   max-width: 638px;
 }
+body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 .question {
+  margin: 7px 0 7px 0;
+}
 body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 .hidden {
-  height: 0;
+  transition: 0.5s;
+  margin: 7px 0 7px 0;
+  height: 30px;
   color: #8A8A8A;
-  overflow: hidden;
+  display: none;
   transition: height 0.5s;
   font-size: 18px;
   letter-spacing: 0.5px;
   word-spacing: 1.2px;
 }
 body .main_desk .section6 .section6-part2-question .section6-part2-question-img {
-  height: 18px;
-  width: 18px;
-  padding: 6px;
-  margin-top: 30px;
+  height: 22px;
+  width: 22px;
+  padding: 10px;
+  margin-right: 20px;
   border-radius: 50px;
   transition: 0.5s;
 }
@@ -727,6 +759,10 @@ body .main_desk .section6 .section6-part2-question {
   flex-direction: row;
 }
 @media screen and (max-width: 1500px) {
+  body .main_desk .main-title .main-title-caption {
+    margin-top: 30px;
+    font-size: 54px;
+  }
   body .main_desk .section6 {
     margin: 46px 0 0 0;
     min-width: 800px;
@@ -756,14 +792,14 @@ body .main_desk .section6 .section6-part2-question {
     justify-content: start;
   }
   body .main_desk .section6 .section6-part2 {
-    height: 200px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
   body .main_desk .section6 .section6-part2-question {
     width: 420px;
-    height: 60px;
+    height: 70px;
     margin-bottom: 14px;
     margin-right: 30px;
     transition: 0.5s;
@@ -772,9 +808,6 @@ body .main_desk .section6 .section6-part2-question {
     height: 60px;
     font-size: 14px;
   }
-  body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 p {
-    margin: 22px 0 0 0;
-  }
   body .main_desk .section6 .section6-part2-question .section6-part2-question-p1 .hidden {
     font-size: 12px;
   }
@@ -782,9 +815,7 @@ body .main_desk .section6 .section6-part2-question {
     height: 18px;
     width: 18px;
     padding: 6px;
-    margin-top: 12px;
-    border-radius: 50px;
-    transition: 0.5s;
+    margin-right: 14px;
   }
   body .main_desk .section6 .section6-part2-question {
     display: flex;
@@ -794,6 +825,10 @@ body .main_desk .section6 .section6-part2-question {
 @media screen and (max-width: 1025px) {
   body main {
     padding: 50px 20px 25px 20px;
+  }
+  body .main_desk .main-title .main-title-caption {
+    margin-top: 30px;
+    font-size: 44px;
   }
   body .main_desk .main-title-caption {
     font-size: 34px;
@@ -969,6 +1004,8 @@ body .main_desk .section6 .section6-part2-question {
   }
   body .main_desk .section5 {
     margin-top: 40px;
+    min-width: 900px;
+    max-width: 900px;
   }
   body .main_desk .section5 .section5-part2 {
     margin-top: 24px;
@@ -1009,7 +1046,7 @@ body .main_desk .section6 .section6-part2-question {
     margin: 0 0 65px 0;
   }
   body .main_desk .section5-part2-part3 {
-    height: 44px;
+    height: 70px;
   }
   body .main_desk .section5-part2-semipart {
     display: flex;
@@ -1177,10 +1214,21 @@ body .section7 .section7-login._sending::after {
 body .section7 .section7-login label {
   margin-left: 15px;
   padding: 0 10px 0 10px;
-  background-color: #ffffff;
   position: absolute;
   font-family: "Montserrat", sans-serif;
   color: #9b9a9a;
+  z-index: 1;
+}
+body .section7 .section7-login label::after {
+  height: 56%;
+  width: 68%;
+  padding: 0 10px 0 10px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: -1;
 }
 body .section7 .namelabel {
   top: 229px;
@@ -1951,17 +1999,26 @@ body .confirmation_bar .confirm_bar_cost {
 body footer {
   font-family: "Montserrat", sans-serif;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 350px;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
   background-color: #f4f4f4;
   padding: 0 10% 0 10%;
 }
-body footer .footer_section {
-  flex-direction: column;
-  margin: 100px 0 0 0;
+body footer .footer-main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-body footer .footer_section .uspace_logo_footer {
+body footer .footer-main-section .footer_section {
+  flex-direction: column;
+  margin: 60px 0 0 0;
+}
+body footer .footer-main-section .footer_section h3 {
+  font-size: 20px;
+}
+body footer .footer-main-section .footer_section .uspace_logo_footer {
+  font-size: 28px;
   width: fit-content;
   margin: 15px 0 0 0;
   background: linear-gradient(264.77deg, #4EF200 6.25%, #4EF200 35.27%, #4EF200 53.56%, #4EF200 73.69%, #000000 4.25%);
@@ -1969,50 +2026,29 @@ body footer .footer_section .uspace_logo_footer {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-body footer .footer_section .navigation {
+body footer .footer-main-section .footer_section .navigation {
   justify-content: start;
   color: #8A8A8A;
   width: 150px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 17px;
   font-weight: lighter;
   margin: 0 0 10px 0;
 }
-body footer .footer_section .part0-footer {
+body footer .footer-main-section .footer_section .part0-footer {
   color: #777777;
   width: 200px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 17px;
   font-weight: lighter;
 }
-body footer .footer_section .footer_subsc-section {
+body footer .footer-main-section .footer_section .footer_subsc-section {
   display: flex;
   flex-direction: row;
 }
-body footer .footer_section .footer_subsc-section .footer-name {
-  padding-left: 10px;
-  width: 180px;
-  height: 40px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
-  border: 1.5px solid #bababa;
-  border-radius: 7px;
-  margin: 0 5px 0 0;
-  outline: none;
-}
-body footer .footer_section .footer_subsc-section .footer-name:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 50px #fff !important;
-  box-shadow: inset 0 0 0 50px #fff !important;
-}
-body footer .footer_section .footer_subsc-section .footer-name:placeholder-shown {
-  color: #bababa;
-  font-size: 12px;
-}
-body footer .footer_section .footer_subsc-section .button-subscription {
+body footer .footer-main-section .footer_section .footer_subsc-section .button-subscription {
   width: 100%;
   height: 44px;
   background: #478F00;
@@ -2021,7 +2057,7 @@ body footer .footer_section .footer_subsc-section .button-subscription {
   border-radius: 5px;
   margin: 0 0 15px 0;
 }
-body footer .footer_section .footer_subsc-section .button-subscription p {
+body footer .footer-main-section .footer_section .footer_subsc-section .button-subscription p {
   font-weight: 600;
   font-size: 16px;
   line-height: 30px;
@@ -2030,26 +2066,49 @@ body footer .footer_section .footer_subsc-section .button-subscription p {
   font-style: normal;
   color: #FFFFFF;
 }
-body footer .footer_section .footer_subsc-section .navigation {
+body footer .footer-main-section .footer_section .footer_subsc-section .navigation {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-body footer .footer_section .footer_subsc-section .contact_img_section {
+body footer .footer-main-section .footer_section .footer_subsc-section .contact_img_section {
   flex-direction: row;
 }
-body footer .footer_section .footer_subsc-section .contact_img_section .footer_contact_img {
+body footer .footer-main-section .footer_section .footer_subsc-section .contact_img_section .footer_contact_img {
   padding-right: 10px;
+}
+body footer .footer-rights {
+  display: flex;
+  justify-content: center;
+}
+body footer .footer-rights p {
+  color: #777777;
+  font-size: 16px;
 }
 @media screen and (max-width: 1025px) {
   body footer {
     height: 300px;
     padding: 0 6% 0 6%;
   }
-  body footer .footer_section {
-    margin: 60px 0 0 0;
+  body footer .footer-main-section .footer_section {
+    margin: 40px 0 0 0;
   }
-  body footer .footer_section .footer_subsc-section .button-subscription {
+  body footer .footer-main-section .footer_section h3 {
+    font-size: 18px;
+  }
+  body footer .footer-main-section .footer_section .uspace_logo_footer {
+    font-size: 24px;
+  }
+  body footer .footer-main-section .footer_section .navigation {
+    font-size: 14px;
+  }
+  body footer .footer-main-section .footer_section .footer_subsc-section .button-subscription {
     height: 34px;
+  }
+  body footer .footer-main-section .footer_section .part0-footer {
+    font-size: 16px;
+  }
+  body .footer-rights p {
+    font-size: 14px;
   }
 }

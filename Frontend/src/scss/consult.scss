@@ -124,10 +124,22 @@
     .section7-login label{
         margin-left: 15px;
         padding: 0 10px 0 10px;
-        background-color: #ffffff;
         position: absolute;
         font-family: 'Montserrat', sans-serif;
         color: #9b9a9a;
+        z-index: 1;
+    }
+
+    .section7-login label::after{
+        height: 56%;
+        width: 68%;
+        padding: 0 10px 0 10px;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: -1;
     }
     
     .namelabel{

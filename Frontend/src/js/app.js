@@ -3,6 +3,7 @@ import * as shop from "../js/shop.js"
 import * as cart from "../js/cart.js"
 import filter from "../js/shop.js";
 import user_data from "../js/cart.js";
+
 var currentPath = window.location.pathname;
 const homenav = document.querySelector('.home');
 const shopnav = document.querySelector('.shop');
@@ -43,50 +44,104 @@ if(currentPath === '/contact.html'){
     homenav.style.textShadow = '1px 5px 6px #dadada';
     homenav.style.transition = '0.5s';
 
-}
+        
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 60,
+        speed: 500,
+        direction: 'horizontal',
 
-const questions = document.querySelectorAll('.section6-part2-question');
+        effect: 'coverflow',
 
-function resetAllElements() {
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 30,
+            slideShadows: false,
+            //shadow: 5,
+        },
+
+        loop: true,
+        loopedSlides: 3,
+
+        grabCursor: true,
+        centeredSlides: true,
+    // watchOverflow: true, if we have less slides then slidesPerView slider won't show up
+
+        navigation: {
+            nextEl: ".section5-part2-right",
+            prevEl: ".section5-part2-left",
+        },
+
+        hashNavigation: {
+            watchState: true,
+        },
+
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageUpDown: true,
+        },
+
+        mousewheel: {
+            sensitivity: 1,
+            eventsTarget: ".swiper-wrapper"
+        },
+
+        //lazyload
+        preloadImages: false,
+        lazy: {
+            loadOnTransitionStart: true,
+            loadPrevNext: false,
+        },
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+    });
+
+    const questions = document.querySelectorAll('.section6-part2-question');
+
+    function resetAllElements() {
+        questions.forEach((question) => {
+            const image = question.querySelector('.section6-part2-question-img');
+            let tabWidth = document.documentElement.clientWidth;
+            const answer = question.querySelector('.hidden');
+            const parent = image.parentElement;
+            image.style.border = "0px";
+            image.style.transform = "rotate(0deg)";
+            answer.style.display = 'none';
+            if(tabWidth < 1500){
+                parent.style.height = '70px';
+            }else{
+                parent.style.height = '110px';
+            }
+        });
+    }
+
     questions.forEach((question) => {
         const image = question.querySelector('.section6-part2-question-img');
-        var tabWidth = document.documentElement.clientWidth;
+        let tabWidth = document.documentElement.clientWidth;
         const answer = question.querySelector('.hidden');
         const parent = image.parentElement;
-        image.style.border = "0px";
-        image.style.transform = "rotate(0deg)";
-        answer.style.height = '0';
-        if(tabWidth < 1500){
-            parent.style.height = '60px';
-        }else{
-            parent.style.height = '100px';
-        }
-    });
-}
+        let clickCount = 0;
+        image.addEventListener("click", (event) => {
+            resetAllElements();
 
-questions.forEach((question) => {
-    const image = question.querySelector('.section6-part2-question-img');
-    var tabWidth = document.documentElement.clientWidth;
-    const answer = question.querySelector('.hidden');
-    const parent = image.parentElement;
-    let clickCount = 0;
-    image.addEventListener("click", (event) => {
-        resetAllElements();
-
-        if (clickCount === 0) {
-            event.target.style.border = "1px solid #4f9e00";
-            event.target.style.transition = "0.5s";
-            event.target.style.transform = "rotate(135deg)";
-            answer.style.height = '30px';
-            if(tabWidth < 1500){
-                parent.style.height = '90px';
-            }else{
-                parent.style.height = '130px';
+            if (clickCount === 0) {
+                event.target.style.border = "1px solid #4f9e00";
+                event.target.style.transition = "0.5s";
+                event.target.style.transform = "rotate(135deg)";
+                answer.style.display = 'block';
+                console.log("1 "+ tabWidth);
+                if(tabWidth < 1500){
+                    parent.style.height = '100px';
+                }else{
+                    parent.style.height = '140px';
+                }
+                clickCount++;
+            } else {
+                clickCount = 0;
             }
-            clickCount++;
-        } else {
-            clickCount = 0;
-        }
+        });
     });
-});
 
+}
