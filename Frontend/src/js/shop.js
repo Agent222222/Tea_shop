@@ -6,8 +6,42 @@ export const work = () => {
     const fromran = document.getElementById('a');
     const toran = document.getElementById('b');
     const groups = document.querySelectorAll('.sub_section8_status-sect');
-    const find_req = document.querySelector('.find_btn');
-   
+    const shop_section = document.querySelector('.sub_section8_show');
+    const filter_form = document.querySelector('.sub_section8_status');
+    const close = document.querySelector('.close_img');
+    const filter_menu = document.querySelector('.img_hedbtn4');
+    const search_img = document.querySelector('.img_input_search');
+    const form_btn = document.getElementById('submit_form_btn');
+    let tabWidth = document.documentElement.clientWidth;
+
+    filter_menu.addEventListener("click", (event) => {
+        filter_form.style.display = 'flex';
+        search_img.style.display = 'none';
+        shop_section.style.height = '0px';
+    });
+
+    close.addEventListener("click", (event) => {
+        filter_form.style.display = 'none';
+        search_img.style.display = 'block';
+        shop_section.style.height = '500px';
+    });
+
+    async function RequestPOST(data) {
+        const errorDisplay = document.querySelector('.error');
+        const response = await fetch("server/server.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: data
+        });
+        const responseData = await response.json();
+        if(responseData.status){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
     groups.forEach(group => {
         const checkboxes = group.querySelectorAll('.section7-checkbox');
@@ -46,7 +80,8 @@ export const work = () => {
        
     }, false);
 
-    find_req.addEventListener("click", (event) => {
+    form_btn.addEventListener("click", (event) => {
+        
         filter.in_stock = false
         filter.expired = false
         filter.from_cost = 0;
@@ -64,7 +99,7 @@ export const work = () => {
                 checkboxes.forEach((checkbox, ch_index)=> {
                     if (checkbox.checked == true) {
                         switch (index) {
-                            case 0:
+                            case 1:
                                 if(ch_index == 0){
                                     filter.in_stock = true;
                                 }
@@ -73,7 +108,7 @@ export const work = () => {
                                 }
                                 break;
 
-                            case 2:
+                            case 3:
                                 if(ch_index == 0){
                                     filter.instrument = true;
                                 }
@@ -82,7 +117,7 @@ export const work = () => {
                                 }
                                 break;
                           
-                            case 3:
+                            case 4:
                                 if(ch_index == 0){
                                     filter.blue_tea = true;
                                 }
@@ -104,9 +139,18 @@ export const work = () => {
             }
             
         });
+        if(tabWidth < 500){
+            filter_form.style.display = 'none';
+            search_img.style.display = 'block';
+            shop_section.style.height = '500px';
+        }
+        
         filter.from_cost = Number.parseFloat(frominpt.value)
         filter.to_cost = Number.parseFloat(toinpt.value)
         console.table(filter);
+        const jsonString = JSON.stringify(filter, null, 2);
+        const result = RequestPOST(jsonString);
+
     });
 
 }

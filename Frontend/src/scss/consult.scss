@@ -279,7 +279,7 @@
     
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 900px){
     .name{
         width: 328px;
         height: 50px;
@@ -296,10 +296,17 @@
         color: #9b9a9a;
         letter-spacing: 1px;
     }
+    
 
     .section7{
+        padding-left: 0;
+        padding-top: 30px;
         .special-arrow{
             width: 50px;
+        }
+
+        .section7-login{
+            padding-left: 20px;
         }
 
         .special-arrow::after {
@@ -336,7 +343,7 @@
         }
 
         .section7-consultation-description{
-            width: 540px;
+            width: auto;
             font-size: 16px;
             line-height: 22px;
             letter-spacing: 1px;
@@ -400,6 +407,154 @@
         .section7-checkbox-label{
             width: 400px;
             font-size: 12px;
+        }
+        
+        .img{
+            align-self: center;
+            width: 720px;
+            height: 400px;
+            margin:  35px 40px 40px 45px;
+            background-size: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .name{
+        width: 80%;
+        height: 50px;
+        font-size: 14px;
+        margin: 23px 0 0 0;
+    }
+
+    .img{
+       display: none;
+    }
+    
+    .name:-webkit-autofill {
+         -webkit-box-shadow: inset 0 0 0 55px #fff!important;
+        box-shadow: inset 0 0 0 55px #fff!important;
+    }
+    
+    .name :placeholder-shown{
+        color: #9b9a9a;
+        letter-spacing: 1px;
+    }
+
+
+    
+
+    .section7{
+        padding-left: 0;
+        .special-arrow{
+            width: 50px;
+        }
+
+        .section7-login{
+            padding-left: 20px;
+            width: auto;
+        }
+
+        .special-arrow::after {
+            top: 9%;
+            left: 190%;
+        }
+
+        .right3::after { 
+            width: 26px;
+        }
+
+        .special-arrow::before {
+            width: 8px;
+            height: 8px;
+            top: 40%;
+            left: 160%;
+        }
+
+        .main-title-caption{
+            font-size: 28px;
+            letter-spacing: 2px;
+            font-weight: 900;
+            color: $color_1;
+            margin: 8px 0 10px 0 ;
+            font-weight: bolder;
+            text-align: center;
+        }
+    
+        .section7-consultation{
+            font-size: 28px;
+            margin-bottom: 8px;
+            margin-top: 40px;
+            width: 200px;
+        }
+
+        .section7-consultation-description{
+            width: auto;
+            font-size: 12px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            color: #303030;
+            margin: 0 0 0 0;
+        }
+    
+        .main-title-btn{
+            p{
+                padding-left: 0px;
+                margin: 0;
+            }
+            max-height: 50px;
+            width: 170px;
+            font-size: 14px;
+        }
+
+        
+
+        .namelabel{
+            top: 151px;
+            font-size: 12px;
+        }
+        
+        .maillabel{
+            top: 228px;
+            font-size: 12px;
+        }
+        
+        .img_input1{
+            top: 177px;
+            margin-left: 72%;
+            width: 16px;
+            height: 17px;
+        }
+        
+        .img_input2{
+            top: 256px;
+            margin-left: 72%;
+            width: 18px;
+            height: 15px;
+        }
+    
+        .main-title-btn{
+            margin: 22px 0 0 0;
+        }
+    
+        .checkbox-div{
+            flex-direction: row;
+            font-size: 16px;
+            width: 480px;
+            height: 40px;
+        }
+        
+        .section7-checkbox{
+            width: 12px;
+            height: 12px;
+            padding-bottom: 20px;
+            margin: 3px 10px 0 1px;
+        }
+        
+        .section7-checkbox-label{
+            padding-right: 15px;
+            width: auto;
+            font-size: 10px;
         }
         
         .img{

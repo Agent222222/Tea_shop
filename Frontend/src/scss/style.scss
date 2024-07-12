@@ -42,8 +42,23 @@ $color_6:#00ff2a;
     margin: 20px 12px 20px 12px;
 }
 
+.active_section{
+    color: #4f9e00;
+    text-shadow: 1px 5px 6px #dadada;
+    transition: 0.5s;
+}
+
+.active{
+    display: flex;
+}
+// .non-active{
+
+// }
+
 body{
     margin: 0px;
+    width: 100vw;
+    overflow-x: hidden;
     background-color: $color_5;
     justify-content: center;
     @import "header.scss";

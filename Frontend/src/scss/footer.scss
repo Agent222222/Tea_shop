@@ -11,24 +11,25 @@ footer{
         flex-direction: row;
         justify-content: space-evenly;
         .footer_section{
+            align-self: start;
             h3{
                 font-size: 20px;
             }
+            
             flex-direction: column;
             margin: 60px 0 0 0 ;
-            .uspace_logo_footer{
-                font-size: 28px;
-                width: fit-content;
-                margin: 15px 0 0 0 ;
-                background: linear-gradient(264.77deg, #4EF200 6.25%, #4EF200 35.27%, #4EF200 53.56%, #4EF200 73.69%, #000000 4.25%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
+            padding: 11px 0 0 25px;
+            .main-logo{
+                img{
+                    width: 130px;
+                }
             }
+            
             .navigation{
                 justify-content: start;
                 color: $color_2;
                 width: 150px;
+                min-width: 130px;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 17px;
@@ -42,6 +43,10 @@ footer{
                 font-weight: 500;
                 line-height: 17px;
                 font-weight: lighter;
+                padding-left: 5px;
+            }
+            .part1-footer{
+                margin: 0;
             }
             .footer_subsc-section{
                 display: flex;
@@ -80,6 +85,9 @@ footer{
                 }
             }
         }
+        .footer_logo{
+            margin-top: 70px;
+        }
     }
     .footer-rights{
         display: flex;
@@ -91,30 +99,193 @@ footer{
     }
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 900px){
     footer{
         height: 300px;
-        padding: 0 6% 0 6%;
+        padding: 0 3% 0 3%;
         .footer-main-section{
             .footer_section{
+                display: flex;
+                align-self: start;
+                padding: 11px 0 0 10px;
                 h3{
-                    font-size: 18px;
+                    font-size: 14px;
                 }
-                .uspace_logo_footer{
-                    font-size: 24px;
+                .main-logo{
+                    img{
+                        width: 100px;
+                    }
+                }
+                .part1-footer{
+                    width: 100px;
                 }
                 .navigation{
-                    font-size: 14px;
+                    font-size: 12px;
+                    min-width: 20px;
                 }
                 margin: 40px 0 0 0 ;
                 .footer_subsc-section{
                     .button-subscription{
                         height: 34px;
+                        min-width: 84px;
+                        p{
+                            font-weight: 600;
+                            font-size: 10px;
+                            line-height: 30px;
+                            border: none;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            color: $color_4;
+                        }
+                        .special-arrow{
+                            width: 30px;
+                        }
+                        .special-arrow::before {
+                            width: 6px;
+                            height: 6px;
+                            top: 52%;
+                            left: 245%;
+                        }
+                        .special-arrow::after {
+                            top: 22%;
+                            left: 308%;
+                        }
+                        
+                        .right3::before { 
+                            transform: rotate(45deg); 
+                            margin: -4px 0 0 -52px;
+                        }
+                        .right3::after { 
+                            width: 20px;
+                            height: 0;
+                            border-width: 2px 0 0 0;
+                            transform: translate(-84px, 1px);
+                        }
                     }
                 }
                 .part0-footer{
-                    font-size: 16px;
+                    font-size: 12px;
+                    width: 130px;
                 }
+            }
+            .footer_logo{
+                margin-top: 45px;
+            }
+        }
+    }
+    .footer-rights{
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    footer{
+        height: auto;
+        padding: 0 3% 0 3%;
+        .footer-main-section{
+            flex-wrap: wrap;
+            padding: 0 20px 0 20px;
+            .footer_section{
+                display: flex;
+                align-self: start;
+                padding: 11px 0 0 10px;
+                h3{
+                    text-align: center;
+                    font-size: 14px;
+                }
+                .main-logo{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 5px;
+                    img{
+                        width: 120px;
+                    }
+                }
+                .part1-footer{
+                    width: 100px;
+                    a{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .navigation{
+                    font-weight: 500;
+                    font-size: 12px;
+                    min-width: 20px;
+                    width: 100px;
+                    margin-bottom: 3px;
+                }
+                margin: 10px 0 0 0 ;
+                .footer_subsc-section{
+                    display: flex;
+                    justify-content: center;
+                    .button-subscription{
+                        height: 34px;
+                        width: 160px;
+                        margin-bottom: 12px;
+                        p{
+                            font-weight: 600;
+                            font-size: 10px;
+                            line-height: 30px;
+                            border: none;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            color: $color_4;
+                        }
+                        .special-arrow{
+                            width: 30px;
+                        }
+                        .special-arrow::before {
+                            width: 6px;
+                            height: 6px;
+                            top: 52%;
+                            left: 245%;
+                        }
+                        .special-arrow::after {
+                            top: 22%;
+                            left: 308%;
+                        }
+                        
+                        .right3::before { 
+                            transform: rotate(45deg); 
+                            margin: -4px 0 0 -52px;
+                        }
+                        .right3::after { 
+                            width: 20px;
+                            height: 0;
+                            border-width: 2px 0 0 0;
+                            transform: translate(-84px, 1px);
+                        }
+                    }
+                }
+                .contact_img_section{
+                    display: flex;
+                    justify-content: center;
+                
+                    .footer_contact_img{
+                        padding: 0 5px;
+                    }
+                }
+                .part0-footer{
+                    font-weight: 500;
+                    text-align: center;
+                    font-size: 12px;
+                    width: 80%;
+                    margin: 5px 0 0 0;
+                }
+            }
+            .write_sect{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .footer_logo{
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+                width: 100%;
+                margin-top: 25px;
             }
         }
     }

@@ -94,15 +94,11 @@ export const active = () => {
     });
 
     confirm_btn.addEventListener('click', () => {
-        console.log('piu');
-        console.log(document.getElementById('online_check').checked)
-        console.log(document.getElementById('reciep_check').checked)
-        console.log(document.getElementById('call_check').checked)
-        console.log(document.getElementById('remind_check').checked)
+
         const check = document.querySelector('.payment-checkbox');
 
         user_data.Name = document.getElementById('FName').value;
-        user_data.Name +=" " + document.getElementById('SName').value;
+        user_data.Name += " " + document.getElementById('SName').value;
         user_data.Email = document.getElementById('Mail').value;
         user_data.Phone = document.getElementById('Phone').value;
         user_data.City = document.getElementById('city').value;

@@ -1,21 +1,27 @@
 import * as from from "../js/from.js"
 import * as shop from "../js/shop.js"
 import * as cart from "../js/cart.js"
+import * as burger from "../js/header.js"
 import filter from "../js/shop.js";
 import user_data from "../js/cart.js";
 
 var currentPath = window.location.pathname;
-const homenav = document.querySelector('.home');
-const shopnav = document.querySelector('.shop');
-const contactnav = document.querySelector('.contact');
+const homenavs = document.querySelectorAll('.home');
+const shopnavs = document.querySelectorAll('.shop');
+const contactnavs = document.querySelectorAll('.contact');
 const cartnav = document.querySelector('.head_btn');
 const inst = document.querySelector('.footer_contact_img');
+burger.nav();
+
 if(currentPath === '/contact.html'){
 
     from.cons(); 
-    contactnav.style.color = '#4f9e00'; 
-    contactnav.style.textShadow = '1px 5px 6px #dadada';
-    contactnav.style.transition = '0.5s';
+    contactnavs.forEach((contactnav) => {
+        contactnav.style.color = '#4f9e00'; 
+        contactnav.style.textShadow = '1px 5px 6px #dadada';
+        contactnav.style.transition = '0.5s';
+    })
+    
 
 }else if(currentPath === '/cart.html'){
 
@@ -24,25 +30,22 @@ if(currentPath === '/contact.html'){
     cartnav.style.transition = '0.5s';
 
 }else if(currentPath === '/shop.html'){
-
-    // inst.addEventListener("click", (event) => {  /// check whether we can interact with filters here
-    //     if(filter.instrument){
-    //         alert("good");
-    //     }else{
-    //         alert("bad")
-    //     }
-    // });
     shop.work();
-    shopnav.style.color = '#4f9e00'; 
-    shopnav.style.textShadow = '1px 5px 6px #dadada';
-    shopnav.style.transition = '0.5s';
+    shopnavs.forEach((shopnav) => {
+        shopnav.style.color = '#4f9e00'; 
+        shopnav.style.textShadow = '1px 5px 6px #dadada';
+        shopnav.style.transition = '0.5s';
+    })
+    
    
 
-}else if(currentPath === '/index.html'){
-
-    homenav.style.color = '#4f9e00'; 
-    homenav.style.textShadow = '1px 5px 6px #dadada';
-    homenav.style.transition = '0.5s';
+}else if(currentPath === '/index.html' || currentPath === '/'){
+    homenavs.forEach((homenav) => {
+        homenav.style.color = '#4f9e00'; 
+        homenav.style.textShadow = '1px 5px 6px #dadada';
+        homenav.style.transition = '0.5s';
+    })
+    
 
         
     var swiper = new Swiper(".swiper", {
