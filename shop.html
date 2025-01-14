@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="../img/Vector 8.svg">
+    <link rel="stylesheet" href="css/style.min.css?_v=20250115002637">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20250115002637">
+    <title>Mspace</title>
+</head>
+<body>
+    <header>
+    <div class="logo-container">
+        <a class="main-logo" href="../index.html">
+            <img src="../img/Frame 427319055.svg" alt="">
+        </a>
+    </div>
+    <ul class="list-in-header">
+        <li class="element-of-headeer-list"><a class="navigation home" href="../index.html">Home</a></li>
+        <li class="element-of-headeer-list"><a class="navigation shop" href="../shop.html">Shop</a></li>
+        <li class="element-of-headeer-list"><a class="navigation contact" href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="head_btn_ctn">
+        <div class="sec1_head_menu">
+            <button  class="head_btn img_hedbtn2"><a class="navigation cart_nav_href" href="../cart.html"> </a></button>
+            <button  class="head_btn img_hedbtn3"><a class="navigation cart_nav_href" href="#"> </a></button>
+        </div>
+        <div class="sec2_head_menu non_visible">
+            <ul class="burgerlist-in-header non-active">
+                <li class="element-of-headeer-list"><a class="navigation home" href="../index.html">Home</a></li>
+                <li class="element-of-headeer-list"><a class="navigation shop" href="../shop.html">Shop</a></li>
+                <li class="element-of-headeer-list"><a class="navigation contact" href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</header>
+    <main>
+        <div class="section8">
+    <div class="sub_section8_serch">
+        <input type="search" id="Search" class="name search_inpt _req" required placeholder="Search..." >
+        <div class="serach_img"><img class="img_input_search" src="../img/Group 427319068.svg" alt=""></div>
+        <button class="main-title-btn" type="submit">
+            <a class="navigation " href="">
+                <p>Search</p>
+            </a>
+        </button>
+        <button  class="head_btn img_hedbtn4"><a class="navigation2 cart_nav_href" href="#"> </a></button>
+    </div>
+    <div class="sub_section8_show">
+        <div class="sub_section8_status">
+            <div class="exit sub_section8_status-sect">
+                <button  class="close_filter"> <img src="../img/chevron-left.svg" class="close_img" alt=""></button>
+                <h2 class="main-title-caption">Filter</h2>
+            </div>
+            <div class="status sub_section8_status-sect">
+                <p class="sub_section8_status-caption">Status</p>
+                <div class="sub_section8_status-check">
+                    <input id="stock_check" type="checkbox" class="section7-checkbox">
+                    <p class="sub_section8_status-ch">In stock</p>
+                </div>
+                <div class="sub_section8_status-check">
+                    <input id="exp_check" type="checkbox" class="section7-checkbox">
+                    <p class="sub_section8_status-ch">Expired</p>
+                </div>
+                
+            </div>
+            <div class="price sub_section8_status-sect">
+                <p class="sub_section8_status-caption">Price</p>
+                <div class="wrap" role="group" aria-labelledby="multi-lbl" style="--a: 0; --b: 60; --min: 0; --max: 100">
+                    <input id="a" type="range" min="0" value="0" max="100"/>
+                    <input id="b" type="range" min="0" value="60" max="100"/>
+                  </div>
+                <label for="name" class="fromlabel">From</label>
+                <input type="text" id="from_cost" class="name cost _req" required  placeholder="$0"  /> <br />
+                <label for="name" class="tolabel">To</label>
+                <input type="text" id="to_cost" class="name cost _req" required /> <br />
+            </div>
+            <div class="category sub_section8_status-sect">
+                <p class="sub_section8_status-caption">Category</p>
+                <div class="sub_section8_status-check">
+                    <input id="intr_check" type="checkbox" class="section7-checkbox">
+                    <p class="sub_section8_status-ch">Instrument</p>
+                </div>
+                <div class="sub_section8_status-check">
+                    <input id="tea_check" type="checkbox" class="section7-checkbox">
+                    <p class="sub_section8_status-ch">Tea</p>
+                </div>
+            </div>
+            <div class="type sub_section8_status-sect">
+                <p class="sub_section8_status-caption">Kind of Matcha</p>
+                <div class="sub_section8_status-check">
+                    <input id="bl_check" type="checkbox" class="section7-checkbox">
+                    <p class="sub_section8_status-ch">Blue</p>
+                </div>
+                <div class="sub_section8_status-check">
+                    <input id="pn_check" type="checkbox" class="section7-checkbox">
+                    <p class="sub_section8_status-ch">Pink</p>
+                </div>
+                <div class="sub_section8_status-check">
+                    <input id="gr_check" type="checkbox" class="section7-checkbox">
+                    <p class="sub_section8_status-ch">Green</p>
+                </div>
+            </div>
+            <button id="submit_form_btn" class="main-title-btn find_btn" type="submit">
+                <p>Find</p>
+            </button>
+        </div>
+        <div class="sub_section8_res">
+
+        </div>
+    </div>
+</div>
+    </main>
+    <footer>
+    <div class="footer-main-section">
+        <div class="footer_section footer_logo">
+            <a class="main-logo" href="../index.html">
+                <img src="../img/Frame 427319055.svg" alt="">
+            </a>
+            <p class="part0-footer">Solution designed and builders company for all your needs</p>
+        </div>
+        <div class="footer_section">
+            <h3>News</h3>
+            <p class="part1-footer" ><a class="navigation" href="../contact.html">Terms of Service</a></p>
+            <p class="part1-footer" ><a class="navigation" href="../contact.html">Privacy Policy</a></p>
+        </div>
+        <div class="footer_section">
+            <h3>Company</h3>
+            <p class="part1-footer" ><a class="navigation" href="../index.html">Matcha</a></p>
+            <p class="part1-footer" ><a class="navigation" href="../contact.html">Contact us</a></p>
+            <p class="part1-footer" ><a class="navigation" href="../shop.html">Shop</a></p>
+            <p class="part1-footer" ><a class="navigation" href="#FAQ">FAQ</a></p>
+        </div>
+        <div class="footer_section write_sect">
+            <h3>Is something wrong?</h3>
+            <div class="footer_subsc-section">
+                <button class="button-subscription">
+                    <a class="navigation" href="../contact.html">
+                        <p>Write us</p>
+                        <span class="special-arrow right3"></span>
+                    </a>
+                </button>
+            </div>
+            <div class="contact_img_section">
+                <picture><source srcset="../img/facebook.webp" type="image/webp"><img class="footer_contact_img" src="../img/facebook.png" alt=""></picture>
+                <picture><source srcset="../img/instagram.webp" type="image/webp"><img class="footer_contact_img" src="../img/instagram.png" alt=""></picture>
+            </div>
+        </div>
+    </div>
+    <div class="footer-rights">
+        <p>© 2023 All rights reserved</p>
+    </div>
+    
+</footer>
+    <script src="js/app.min.js?_v=20250115002637"></script>
+    <script src="https://kit.fontawesome.com/6f61a365c7.js?_v=20250115002637" crossorigin="anonymous"></script>
+</body>
+</html>
